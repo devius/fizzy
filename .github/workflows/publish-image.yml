@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - i18n-georgian
     tags:
       - 'v*'
   workflow_dispatch:
