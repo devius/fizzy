@@ -11,8 +11,8 @@
       <span> · </span>
       <span class="attachment__size"><%= number_to_human_size blob.byte_size %></span>
       <span> · </span>
-      <%= link_to rails_blob_path(blob, disposition: :attachment), class: "attachment__link", download: blob.filename, title: "Download #{blob.filename}" do %>
-        <span>Download</span>
+      <%= link_to rails_blob_path(blob, disposition: :attachment), class: "attachment__link", download: blob.filename, title: t(".download_title", filename: blob.filename) do %>
+        <span><%= t(".download") %></span>
       <% end %>
     </figcaption>
   </figure>

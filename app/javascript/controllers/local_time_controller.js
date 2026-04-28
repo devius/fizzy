@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { differenceInDays, secondsToDate } from "helpers/date_helpers"
+import { t } from "lib/i18n"
 
 const DEFAULT_LOCALE = "en-US"
 
@@ -106,20 +107,20 @@ class AgoFormatter {
     const months = days / (365 / 12)
     const years = days / 365
 
-    if (years >= 1) return this.#pluralize("year", years)
-    if (months >= 1) return this.#pluralize("month", months)
-    if (weeks >= 1) return this.#pluralize("week", weeks)
-    if (days >= 1) return this.#pluralize("day", days)
-    if (hours >= 1) return this.#pluralize("hour", hours)
-    if (minutes >= 1) return this.#pluralize("minute", minutes)
+    if (years >= 1) return this.#translate("x_years_ago", years)
+    if (months >= 1) return this.#translate("x_months_ago", months)
+    if (weeks >= 1) return this.#translate("x_weeks_ago", weeks)
+    if (days >= 1) return this.#translate("x_days_ago", days)
+    if (hours >= 1) return this.#translate("x_hours_ago", hours)
+    if (minutes >= 1) return this.#translate("x_minutes_ago", minutes)
 
-    return "Less than a minute ago"
+    return t("local_time.less_than_a_minute_ago")
   }
 
-  #pluralize(word, quantity) {
+  #translate(unitKey, quantity) {
     quantity = Math.floor(quantity)
-    const suffix = (quantity === 1) ? "" : "s"
-    return `${quantity} ${word}${suffix} ago`
+    const form = quantity === 1 ? "one" : "other"
+    return t(`local_time.${unitKey}.${form}`, { count: quantity })
   }
 }
 
@@ -127,9 +128,9 @@ class DaysAgoFormatter {
   format(date) {
     const days = differenceInDays(date, new Date())
 
-    if (days <= 0) return styleableValue("today")
-    if (days === 1) return styleableValue("yesterday")
-    return `${styleableValue(days)} days ago`
+    if (days <= 0) return styleableValue(t("local_time.today"))
+    if (days === 1) return styleableValue(t("local_time.yesterday"))
+    return t("local_time.x_days_ago_styled", { count: styleableValue(days) })
   }
 }
 
@@ -149,9 +150,10 @@ class InDaysFormatter {
   format(date) {
     const days = differenceInDays(new Date(), date)
 
-    if (days <= 0) return styleableValue("today")
-    if (days === 1) return styleableValue("tomorrow")
-    return `in ${styleableValue(days)} days`
+    if (days <= 0) return styleableValue(t("local_time.today"))
+    if (days === 1) return styleableValue(t("local_time.tomorrow"))
+    const form = days === 1 ? "one" : "other"
+    return t(`local_time.in_x_days.${form}`, { count: styleableValue(days) })
   }
 }
 

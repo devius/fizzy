@@ -1,0 +1,33 @@
+en:
+  sessions:
+    footer:
+      need_help_html: "Need help? %{link}."
+      send_email: "Send us an email"
+    new:
+      page_title: "Enter your email"
+      heading: "Get into Fizzy"
+      email_placeholder: "Enter your email address…"
+      signup_prompt_html: "<strong>New here?</strong> %{sign_up} to create an account. <strong>Already have an account?</strong> Enter your email and we’ll get you signed in."
+      sign_up: "Sign up"
+      signin_prompt: "Enter your email and we’ll get you signed in."
+      lets_go: "Let’s go"
+      passkey_sign_in: "Sign in with a passkey"
+    magic_links:
+      show:
+        page_title: "Check your email"
+        instruction: "Then enter the verification code included in the email below:"
+        code_validity_html: "The code sent to %{email} will work for %{duration}."
+        dev_code_label: "Psst, here's your code:"
+    menus:
+      show:
+        page_title: "Choose an account"
+        your_accounts: "Your Fizzy accounts"
+        no_accounts_heading: "Hmm..."
+        no_accounts_message: "You don’t have any Fizzy accounts."
+        sign_up_new: "Sign up for a new Fizzy account"
+    starts:
+      new:
+        page_title: "Signing in..."
+        intro: "Just a sec while we sign you in with %{account}."
+        sign_in: "Sign in"
+        signing_in: "Signing in..."

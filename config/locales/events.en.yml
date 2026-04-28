@@ -1,0 +1,36 @@
+en:
+  events:
+    empty_days:
+      no_activity: "No activity"
+      no_activity_for_days: "No activity for %{count} days"
+      no_more_activity: "No more activity"
+    day_timeline:
+      column:
+        expand_column: "Expand column"
+        showing_recent: "Showing the 100 most recent (%{hidden} are hidden)"
+      columns:
+        show:
+          activity: "Activity"
+    event:
+      layout:
+        card_number: "Card number"
+    index:
+      page_title: "Home"
+      activity_in: "Activity in"
+      activity_across: "Activity across"
+      latest_activity: "Latest Activity"
+      add_board_button:
+        add_board: "Add board"
+        add_a_board: "Add a board"
+      add_card_button:
+        add_card: "Add card"
+        add_a_card: "Add a card"
+      filter:
+        by: "by"
+        board:
+          board: "Board…"
+          filter_placeholder: "Filter…"
+        user:
+          everyone: "everyone"
+          person: "Person…"
+          filter_placeholder: "Filter…"

@@ -1,0 +1,65 @@
+ka:
+  layouts:
+    application:
+      skip_to_main: "მთავარ შინაარსზე გადასვლა"
+    public:
+      skip_to_main: "მთავარ შინაარსზე გადასვლა"
+    lightbox:
+      label: "სურათების სანახავი (გასასვლელად დააჭირეთ Escape)"
+      close: "დახურვა (esc)"
+    shared:
+      welcome_letter:
+        close: "ფანჯრის დახურვა"
+        heading: "მოგესალმებით და გმადლობთ Fizzy-ში დარეგისტრირებისთვის."
+        intro_html: "დასაწყებად, თქვენთვის შევქმენით Fizzy-ს დაფა სახელად <em>Playground</em>. მასზე რამდენიმე ბარათია, რომლებიც დაგეხმარებათ Fizzy-ს გაცნობაში. გახსენით თითოეული ბარათი, გაიარეთ მარტივი ნაბიჯები და მალე Fizzy-ს ექსპერტი გახდებით. <em>Playground</em>-ს ნახავთ, როცა ამ შეტყობინებას დახურავთ."
+        contact_html: "თუ დახმარება დაგჭირდებათ, მომწერეთ პირდაპირ jason@37signals.com-ზე. თქვენი თანადგომისთვის აქ ვართ — ყველა ჩვენგანი."
+        thanks: "კიდევ ერთხელ გმადლობთ და წარმატებებს გისურვებთ,"
+        signature_role_html: "<strong>Jason Fried</strong>, jason@37signals.com<br><em>37signals-ის CEO და თანადამფუძნებელი — Fizzy-ის, Basecamp-ის და HEY-ის შემქმნელი</em>"
+      colophon:
+        designed_by: "შექმნილი, აშენებული და მხარდაჭერილია"
+        makers_of: ", რომელიც ქმნის"
+        and: "და"
+
+  my:
+    menus:
+      jump:
+        close: "მენიუს დახურვა"
+        home: "მთავარი"
+        assigned_to_me: "ჩემზეა მინიჭებული"
+        added_by_me: "ჩემ მიერ დამატებული"
+        no_matches: "ფილტრს არაფერი ემთხვევა"
+      boards:
+        title: "დაფები"
+        add: "დაფის დამატება"
+      tags:
+        title: "ტეგები"
+      people:
+        title: "ხალხი"
+        invite: "ხალხის მოწვევა"
+      settings:
+        title: "პარამეტრები"
+        account: "ანგარიშის პარამეტრები"
+        profile: "ჩემი პროფილი"
+        all_notifications: "ყველა შეტყობინება"
+        notification_settings: "შეტყობინებების პარამეტრები"
+        sign_out: "გასვლა"
+      shortcuts:
+        title: "მალსახმობები"
+        golden: "ოქროს ბარათები"
+        stalled: "გაჭედილი ბარათები"
+        closing_soon: "მალე დასახურავი ბარათები"
+        added_today: "დღეს დამატებული"
+        done_today: "დღეს დასრულებული"
+      accounts:
+        title: "ანგარიშები"
+      custom_views:
+        title: "მორგებული ხედები"
+        create: "მორგებული ხედის შექმნა"
+
+  boards:
+    new:
+      page_title: "ახალი დაფის შექმნა"
+      name_placeholder: "დაასახელე…"
+      name_blank: "დაფის სახელი არ უნდა იყოს ცარიელი"
+      submit: "დაფის შექმნა"
+      cancel: "გაუქმება და უკან დაბრუნება"

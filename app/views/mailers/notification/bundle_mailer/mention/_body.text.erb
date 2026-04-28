@@ -1,5 +1,5 @@
 <% mention = notification.source %>
 
-<%= mention.mentioner.first_name %> mentioned you:
+<%= t("mailers.notification.bundle_mailer.mention.body.mentioned_you", name: mention.mentioner.first_name) %>
 <%= mention.source.mentionable_content.truncate(250) %>
 <%= url_for mention %>

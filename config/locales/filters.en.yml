@@ -1,0 +1,45 @@
+en:
+  filters:
+    filter_toggle:
+      delete_custom_view: "Delete custom view"
+      save_custom_view: "Save custom view"
+    settings:
+      toggle_filters: "Toggle filters"
+      assignees:
+        assigned_to_placeholder: "Assigned to…"
+        assigned_to_prefix: "Assigned to"
+        filter_placeholder: "Filter…"
+        no_one: "No one"
+      boards:
+        board_placeholder: "Board…"
+        filter_placeholder: "Filter…"
+      cards:
+        cards_label: "Cards %{ids}"
+      closers:
+        closed_by_placeholder: "Closed by…"
+        closed_by_prefix: "Closed by"
+        filter_placeholder: "Filter…"
+      creators:
+        added_by_placeholder: "Added by…"
+        added_by_prefix: "Added by"
+        filter_placeholder: "Filter…"
+      indexed_by:
+        status_placeholder: "Status…"
+        filter_by: "Filter by…"
+        filter_by_status: "Filter by status…"
+      manage:
+        clear_all: "Clear all"
+      sorted_by:
+        sort_by: "Sort by…"
+      tags:
+        tagged_placeholder: "Tagged…"
+        filter_placeholder: "Filter…"
+      terms:
+        placeholder_with_hotkey: "Filter these cards… [F]"
+        placeholder: "Filter these cards…"
+      time_window:
+        created: "Created…"
+      toggle:
+        close_filter_options: "Close filter options"
+        collapse_filter_options: "Collapse filter options"
+        expand_filter_options: "Expand filter options"

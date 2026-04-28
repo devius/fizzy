@@ -12,9 +12,10 @@ class Notification::BundleMailer < ApplicationMailer
     @unsubscribe_token = @user.generate_token_for(:unsubscribe)
 
     if @notifications.any?
+      account_suffix = @user.identity.accounts.many? ? " (#{ Current.account.name })" : ""
       mail \
         to: bundle.user.identity.email_address,
-        subject: "Fizzy#{ " (#{ Current.account.name })" if @user.identity.accounts.many? }: New notifications"
+        subject: I18n.t("mailers.notification.bundle_mailer.notification.subject", account_suffix: account_suffix)
     end
   end
 end

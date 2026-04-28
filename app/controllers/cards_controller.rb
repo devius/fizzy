@@ -45,7 +45,7 @@ class CardsController < ApplicationController
     @card.destroy!
 
     respond_to do |format|
-      format.html { redirect_to @card.board, notice: "Card deleted" }
+      format.html { redirect_to @card.board, notice: I18n.t("flashes.card_deleted") }
       format.json { head :no_content }
     end
   end

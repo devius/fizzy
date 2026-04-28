@@ -1,0 +1,31 @@
+en:
+  public:
+    boards:
+      columns:
+        closeds:
+          show:
+            page_title: "Column: Done"
+            no_cards_here: "No cards here"
+        not_nows:
+          show:
+            page_title: "Column: Not now"
+            no_cards_here: "No cards here"
+        show:
+          page_title: "Column: %{name}"
+          no_cards_here: "No cards here"
+        streams:
+          show:
+            page_title: "Column: Maybe?"
+            no_cards_here: "No cards here"
+      show:
+        closed:
+          done: "Done"
+          maximize_column: "Maximize column"
+        column:
+          maximize_column: "Maximize column"
+        not_now:
+          not_now: "Not Now"
+          maximize_column: "Maximize column"
+        stream:
+          maybe: "Maybe?"
+          maximize_column: "Maximize column"

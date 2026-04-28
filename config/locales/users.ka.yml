@@ -1,0 +1,95 @@
+ka:
+  users:
+    show:
+      edit_profile: "პროფილის რედაქტირება"
+      avatar_alt: "%{name}-ის პროფილის ავატარი"
+      no_longer_on_account: "%{name} აღარ არის ამ ანგარიშზე"
+      unverified: "დაუდასტურებელი"
+      unverified_explanation: "ამ ელფოსტაზე გაგზავნილია შესვლის კოდი, მაგრამ მომხმარებელს ჯერ არ შემოუსვლია ვინაობის დასადასტურებლად."
+      cards_assigned_to: "რომელი ბარათებია მინიჭებული %{name}-ზე?"
+      cards_added_by: "რომელი ბარათები დაამატა %{name}-მა?"
+      manage_passkeys: "Passkey-ების მართვა"
+      sign_out_device: "Fizzy-დან გასვლა ამ მოწყობილობაზე"
+    edit:
+      page_title: "თქვენი პროფილის რედაქტირება"
+      back: "პროფილი"
+      avatar_alt: "%{name}-ის პროფილის ავატარი"
+      delete_avatar_confirm: "ნამდვილად გსურთ ავატარის წაშლა? ამის გაუქმება შეუძლებელია."
+      delete_avatar: "ავატარის წაშლა"
+      name_placeholder: "სახელი"
+      email_placeholder: "ელფოსტა"
+      change_email: "ელფოსტის შეცვლა"
+      errors_heading: "თქვენი ცვლილებები ვერ შეინახა:"
+      save: "ცვლილებების შენახვა"
+      cancel: "გაუქმება და უკან დაბრუნება"
+    access_tokens:
+      heading: "დეველოპერი"
+      description_html: "მართეთ %{link}, რომლებიც გამოიყენება Fizzy-ის დეველოპერ API-სთან."
+      tokens_link: "პერსონალური წვდომის ტოკენები"
+    activity_timeline:
+      load_more: "მეტის ჩატვირთვა…"
+    data_export:
+      heading: "მონაცემების ექსპორტი"
+      description: "ჩამოტვირთეთ თქვენი Fizzy მონაცემების არქივი."
+      begin_export: "ექსპორტის დაწყება..."
+      dialog_heading: "მონაცემების ექსპორტი"
+      dialog_intro: "ეს შექმნის ZIP არქივს ყველა იმ ბარათისგან, რომელზეც გაქვთ წვდომა."
+      dialog_email_note: "მზად რომ იქნება, გამოგიგზავნით ჩამოტვირთვის ბმულს ელფოსტით. ბმული 24 საათში ამოიწურება."
+      start_export: "ექსპორტის დაწყება"
+      cancel: "გაუქმება"
+    theme:
+      heading: "გარეგნობა"
+      always_light: "ყოველთვის ღია"
+      always_dark: "ყოველთვის მუქი"
+      same_as_os: "OS-ის მიხედვით"
+    transfer:
+      heading: "მოწყობილობები"
+      description: "ბმული, რომლითაც ავტომატურად შეხვალთ სხვა მოწყობილობაზე."
+      display_qr: "ავტო-შესვლის QR კოდის ჩვენება"
+      scan_to_login: "დაასკანერეთ ეს კოდი სხვა მოწყობილობაზე მყისიერად შესასვლელად:"
+      done: "მზადაა"
+      copy_link: "ავტო-შესვლის ბმულის კოპირება"
+    data_exports:
+      show:
+        page_title_ready: "ექსპორტის ჩამოტვირთვა"
+        page_title_expired: "ჩამოტვირთვა ამოიწურა"
+        back: "უკან"
+        ready_intro: "თქვენი ექსპორტი მზადაა. ჩამოტვირთვა ავტომატურად დაიწყება."
+        download: "მონაცემების ჩამოტვირთვა"
+        expired_html: "ეს ჩამოტვირთვის ბმული ამოიწურა. დაგჭირდებათ %{link}."
+        request_new_export: "მოითხოვოთ ახალი ექსპორტი"
+    email_addresses:
+      confirmations:
+        invalid_token:
+          page_title: "ბმული ამოიწურა"
+          explanation: "ეს ელფოსტის დასადასტურებელი ბმული აღარ მოქმედებს — ისინი 30 წუთში ამოიწურება. სცადეთ თავიდან."
+          change_email: "ელფოსტის შეცვლა"
+          support_html: "თუ რამე ვერ ხერხდება, %{link} და დაგეხმარებით."
+          send_email: "მოგვწერეთ"
+        show:
+          page_title: "ელფოსტის ცვლილების დადასტურება"
+          intro: "ერთ წამს, ვადასტურებთ თქვენს ახალ ელფოსტას."
+          done: "მზადაა"
+      create:
+        page_title: "ახალი ელფოსტის დადასტურება"
+        back: "ჩემი პროფილი"
+        heading: "შეამოწმეთ ელფოსტა"
+        sent_to_html: "გამოგიგზავნეთ წერილი მისამართზე %{email}"
+        instruction: "ელფოსტაში მოცემულ ბმულზე დააწკაპუნეთ, რომ დაადასტუროთ, რომ ეს ის ელფოსტაა, რომლითაც გსურთ Fizzy-ში გაგრძელება."
+        done: "მზადაა"
+      new:
+        page_title: "ელფოსტის შეცვლა"
+        back: "ჩემი პროფილი"
+        email_placeholder: "ახალი ელფოსტა"
+        instruction: "შეიყვანეთ ახალი ელფოსტა და შეამოწმეთ ფოსტა ცვლილების დასადასტურებლად."
+        continue: "გაგრძელება"
+    events:
+      show:
+        your_activity: "რას აკეთებდით ბოლო დროს?"
+        user_activity: "რას აკეთებდა %{name} ბოლო დროს?"
+        load_more: "მეტის ჩატვირთვა…"
+    joins:
+      new:
+        page_title: "მშვენიერია! ახლა შეიყვანეთ თქვენი სახელი"
+        name_placeholder: "სრული სახელი"
+        continue: "გაგრძელება"

@@ -1,0 +1,95 @@
+en:
+  users:
+    show:
+      edit_profile: "Edit profile"
+      avatar_alt: "Profile avatar for %{name}"
+      no_longer_on_account: "%{name} is no longer on this account"
+      unverified: "Unverified"
+      unverified_explanation: "A sign-in code has been sent to this email address, but the user has not yet logged in to confirm their identity."
+      cards_assigned_to: "Which cards are assigned to %{name}?"
+      cards_added_by: "Which cards were added by %{name}?"
+      manage_passkeys: "Manage passkeys"
+      sign_out_device: "Sign out of Fizzy on this device"
+    edit:
+      page_title: "Edit your profile"
+      back: "profile"
+      avatar_alt: "Profile avatar for %{name}"
+      delete_avatar_confirm: "Are you sure you want to remove your avatar? This can't be undone."
+      delete_avatar: "Delete avatar"
+      name_placeholder: "Name"
+      email_placeholder: "Email address"
+      change_email: "Change email"
+      errors_heading: "Your changes couldn't be saved:"
+      save: "Save changes"
+      cancel: "Cancel and go back"
+    access_tokens:
+      heading: "Developer"
+      description_html: "Manage %{link} used with the Fizzy developer API."
+      tokens_link: "personal access tokens"
+    activity_timeline:
+      load_more: "Load more…"
+    data_export:
+      heading: "Export your data"
+      description: "Download an archive of your Fizzy data."
+      begin_export: "Begin export..."
+      dialog_heading: "Export your data"
+      dialog_intro: "This will generate a ZIP archive of all cards you have access to."
+      dialog_email_note: "We’ll email you a link to download the file when it’s ready. The link will expire after 24 hours."
+      start_export: "Start export"
+      cancel: "Cancel"
+    theme:
+      heading: "Appearance"
+      always_light: "Always light"
+      always_dark: "Always dark"
+      same_as_os: "Same as OS"
+    transfer:
+      heading: "Devices"
+      description: "Link to automatically log in on another device."
+      display_qr: "Display auto-login QR code"
+      scan_to_login: "Scan this code to instantly log in on another device:"
+      done: "Done"
+      copy_link: "Copy auto-login link"
+    data_exports:
+      show:
+        page_title_ready: "Download Export"
+        page_title_expired: "Download Expired"
+        back: "back"
+        ready_intro: "Your export is ready. The download should start automatically."
+        download: "Download your data"
+        expired_html: "That download link has expired. You'll need to %{link}."
+        request_new_export: "request a new export"
+    email_addresses:
+      confirmations:
+        invalid_token:
+          page_title: "Link expired"
+          explanation: "That email confirmation link is no longer valid—they expire after 30 minutes. You’ll have to try again."
+          change_email: "Change my email address"
+          support_html: "If you get stuck, %{link} and we’ll get you back on track."
+          send_email: "send us an email"
+        show:
+          page_title: "Confirm email change"
+          intro: "Just a sec while we confirm your new email address."
+          done: "Done"
+      create:
+        page_title: "Confirm your new email address"
+        back: "My profile"
+        heading: "Check your email"
+        sent_to_html: "We just sent an email to %{email}"
+        instruction: "Hit the link in the email to confirm this is the email address you want to use with Fizzy going forward."
+        done: "Done"
+      new:
+        page_title: "Change your email"
+        back: "My profile"
+        email_placeholder: "New email address"
+        instruction: "Enter your new email address, then check your\u00a0email to confirm the change."
+        continue: "Continue"
+    events:
+      show:
+        your_activity: "What have you been up to?"
+        user_activity: "What has %{name} been up to?"
+        load_more: "Load more…"
+    joins:
+      new:
+        page_title: "Great! Now enter your name"
+        name_placeholder: "Full name"
+        continue: "Continue"

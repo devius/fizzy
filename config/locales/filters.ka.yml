@@ -1,0 +1,45 @@
+ka:
+  filters:
+    filter_toggle:
+      delete_custom_view: "მორგებული ხედის წაშლა"
+      save_custom_view: "მორგებული ხედის შენახვა"
+    settings:
+      toggle_filters: "ფილტრების გადართვა"
+      assignees:
+        assigned_to_placeholder: "მიმაგრებულია…"
+        assigned_to_prefix: "მიმაგრებულია"
+        filter_placeholder: "ფილტრი…"
+        no_one: "არავინ"
+      boards:
+        board_placeholder: "დაფა…"
+        filter_placeholder: "ფილტრი…"
+      cards:
+        cards_label: "ბარათები %{ids}"
+      closers:
+        closed_by_placeholder: "დახურა…"
+        closed_by_prefix: "დახურა"
+        filter_placeholder: "ფილტრი…"
+      creators:
+        added_by_placeholder: "დაამატა…"
+        added_by_prefix: "დაამატა"
+        filter_placeholder: "ფილტრი…"
+      indexed_by:
+        status_placeholder: "სტატუსი…"
+        filter_by: "ფილტრი…"
+        filter_by_status: "სტატუსით ფილტრი…"
+      manage:
+        clear_all: "ყველას გასუფთავება"
+      sorted_by:
+        sort_by: "დახარისხება…"
+      tags:
+        tagged_placeholder: "ტეგებით…"
+        filter_placeholder: "ფილტრი…"
+      terms:
+        placeholder_with_hotkey: "ბარათების ფილტრი… [F]"
+        placeholder: "ბარათების ფილტრი…"
+      time_window:
+        created: "შექმნილია…"
+      toggle:
+        close_filter_options: "ფილტრის პარამეტრების დახურვა"
+        collapse_filter_options: "ფილტრის პარამეტრების დაკეცვა"
+        expand_filter_options: "ფილტრის პარამეტრების გაშლა"

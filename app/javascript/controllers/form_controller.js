@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { debounce, nextFrame } from "helpers/timing_helpers";
+import { t } from "lib/i18n"
 
 export default class extends Controller {
   static targets = [ "cancel", "submit", "input" ]
@@ -36,7 +37,7 @@ export default class extends Controller {
 
       if (isEmpty) {
         event.preventDefault()
-        input.setCustomValidity(input.dataset.validationMessage || "Please fill out this field")
+        input.setCustomValidity(input.dataset.validationMessage || t("forms.please_fill"))
         input.reportValidity()
         input.addEventListener("input", () => input.setCustomValidity(""), { once: true })
       }

@@ -1,0 +1,143 @@
+ka:
+  cards:
+    delete:
+      delete_this_card: "ბარათის წაშლა"
+      confirm_title: "წავშალოთ ეს ბარათი?"
+      confirm_message: "ნამდვილად გსურთ ამ ბარათის სამუდამო წაშლა?"
+      cancel: "გაუქმება"
+      delete_card: "ბარათის წაშლა"
+    edit:
+      title_placeholder: "დაარქვით სახელი…"
+      description_placeholder: "დაამატეთ შენიშვნები, კონტექსტი, სურათები ან ვიდეო ამის შესახებ…"
+      close_editor: "რედაქტორის დახურვა და ცვლილებების გაუქმება"
+      cancel: "გაუქმება"
+    index:
+      no_cards: "ამ ფილტრს არცერთი ბარათი არ ემთხვევა"
+    assignments:
+      new:
+        title: "მიანიჭე ეს…"
+        filter_placeholder: "ფილტრი…"
+        me: "მე"
+        limit_message:
+          one: "მაქსიმუმ %{count} პასუხისმგებელი"
+          other: "მაქსიმუმ %{count} პასუხისმგებელი"
+    boards:
+      edit:
+        title: "ამ ბარათის გადატანა…"
+        filter_placeholder: "ფილტრი…"
+    columns:
+      edit:
+        legend: "აირჩიეთ სვეტი ამ ბარათისთვის"
+        not_now: "არა ახლა"
+        maybe: "იქნებ?"
+        done: "დასრულდა"
+    comments:
+      comment:
+        full_history: "სრული ისტორია"
+        edit_this_comment: "ამ კომენტარის რედაქტირება"
+      new:
+        post_title: "ამ კომენტარის გამოქვეყნება"
+        post: "გამოქვეყნება"
+      watchers:
+        subscribers: "გამომწერები"
+        notification_message:
+          one: "%{count} ადამიანს მიუვა შეტყობინება, როცა ამაზე ვინმე დაწერს კომენტარს."
+          other: "%{count} ადამიანს მიუვა შეტყობინება, როცა ამაზე ვინმე დაწერს კომენტარს."
+      edit:
+        save_title: "ცვლილებების შენახვა"
+        save: "შენახვა"
+        cancel_title: "გაუქმება"
+        cancel: "გაუქმება"
+        delete_confirm: "ნამდვილად გსურთ ამ კომენტარის წაშლა?"
+        delete: "წაშლა"
+    container:
+      closure:
+        completed_by_html: "დაასრულა %{name}-მ %{date}."
+        undo: "გაუქმება"
+        auto_move_html: "გადავა „არა ახლა“-ში %{date}, თუ აქტივობა არ იქნება."
+      closure_buttons:
+        edit: "რედაქტირება"
+        mark_done: "მონიშნე როგორც დასრულებული"
+        mark_as_done: "დასრულებულად მონიშვნა"
+      content:
+        title_placeholder: "დაარქვით სახელი…"
+        description_placeholder: "დაამატეთ შენიშვნები, კონტექსტი, სურათები ან ვიდეო ამის შესახებ…"
+      gild:
+        demote: "ნორმალურამდე დაქვეითება"
+        demote_sr: "ნორმალურამდე დაქვეითება (shift+g)"
+        promote: "ოქროს ბილეთამდე ამაღლება"
+        promote_sr: "ოქროს ბილეთამდე ამაღლება (shift+g)"
+      image:
+        remove_image: "ფონური სურათის მოშორება"
+        add_image: "ფონური სურათის დამატება"
+      save_button:
+        save_changes: "ცვლილებების შენახვა"
+      footer:
+        create:
+          create_card: "ბარათის შექმნა"
+          create_and_add_another: "შექმნა და კიდევ ერთის დამატება"
+        published:
+          watch_this: "თვალყურის დევნება"
+          pin_this_card: "ბარათის მიმაგრება"
+    display:
+      public_preview:
+        card_number: "ბარათის ნომერი"
+      common:
+        assignees:
+          assign: "დანიშვნა"
+          assign_to_me: "ჩემზე დანიშვნა"
+        board:
+          card_number: "ბარათის ნომერი"
+        meta:
+          by_html: "ავტორი: <strong>%{name}</strong>"
+          updated: "განახლდა"
+          assigned_to: "დანიშნულია"
+          not_assigned: "დაუნიშნავი"
+        stamp:
+          not_now: "არა ახლა"
+          done: "დასრულდა"
+          by: "ავტორი:"
+      perma:
+        background:
+          zoom_image: "ფონური სურათის გადიდება"
+        board:
+          choose_board: "აირჩიეთ დაფა ამ ბარათისთვის"
+        steps:
+          add_step_placeholder: "დაამატეთ ნაბიჯი…"
+          add_step: "ნაბიჯის დამატება"
+        tags:
+          add_tag: "ტეგის დამატება"
+      preview:
+        meta:
+          last_updated: "ბოლოს განახლდა"
+          assigned_to: "დანიშნულია"
+      public_preview:
+        meta:
+          by_html: "ავტორი: <strong>%{name}</strong>"
+          updated: "განახლდა"
+          assigned_to: "დანიშნულია"
+    pins:
+      pin_button:
+        unpin: "ბარათის მოხსნა"
+        unpin_sr: "ბარათის მოხსნა (shift+p)"
+        pin: "ბარათის მიმაგრება"
+        pin_sr: "ბარათის მიმაგრება (shift+p)"
+    steps:
+      edit:
+        name_step_placeholder: "დაარქვით ამ ნაბიჯს სახელი…"
+        save_changes: "ცვლილებების შენახვა"
+        cancel_changes: "ცვლილებების გაუქმება"
+        delete_step: "ამ ნაბიჯის წაშლა"
+    taggings:
+      new:
+        title: "მონიშნეთ ეს…"
+        add_or_filter_placeholder: "დაამატეთ ახალი ტეგი ან გაფილტრეთ…"
+        name_tag_placeholder: "დაარქვით ამ ტეგს სახელი…"
+        create_a_new_tag: "ახალი ტეგის შექმნა"
+        create_tag: "ტეგის შექმნა"
+    watches:
+      watch_button:
+        stop_watching: "თვალყურის დევნების შეჩერება"
+        stop_watching_sr: "თვალყურის დევნების შეჩერება (shift+n)"
+        watch_this: "თვალყურის დევნება"
+        watch_this_sr: "თვალყურის დევნება (shift+n)"

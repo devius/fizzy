@@ -1,0 +1,81 @@
+en:
+  mailers:
+    account_mailer:
+      cancellation:
+        subject: "Your Fizzy account was cancelled"
+        intro_html: "Your Fizzy account <strong>%{account_name}</strong> was cancelled."
+        intro: "Your Fizzy account \"%{account_name}\" was cancelled."
+        what_happens_now: "What happens now?"
+        no_access: "No one can access the account anymore"
+        deletion_in: "Everything in the account will be deleted in %{time}"
+        changed_your_mind: "Changed your mind?"
+        restore_html: "If you want to cancel this deletion and restore your account, send us an email to %{email} as soon as possible."
+        restore: "If you want to cancel this deletion and restore your account, send us an email to %{email} as soon as possible."
+    export_mailer:
+      completed:
+        subject: "Your Fizzy data export is ready for download"
+        title: "Download your Fizzy data"
+        subtitle: "Your Fizzy data export has finished processing and is ready to download."
+        download: "Download your data"
+        help_html: "Need help? %{email}."
+        send_us_an_email: "Send us an email"
+    import_mailer:
+      completed:
+        subject: "Your Fizzy account import is done"
+        subtitle: "Your import of %{account_name} is complete!"
+        go_to_account: "Go to your account"
+        heres_the_url: "Here's the URL"
+        help_html: "Need help? %{email}."
+        send_us_an_email: "Send us an email"
+      failed:
+        subject: "Your Fizzy account import failed"
+        subtitle: "Unfortunately, we couldn't import your Fizzy account."
+        conflict: "It looks like the account you are trying to import already exists."
+        invalid_export: "The ZIP file isn't a Fizzy account export."
+        unknown: "This may be due to corrupted export data or a conflict with existing data. Please try again with a fresh export, or reach out for help if the problem persists."
+        help_html: "Need help? %{email}."
+        help: "Need help? Send us an email at %{email}"
+        send_us_an_email: "Send us an email"
+    magic_link_mailer:
+      sign_in_instructions:
+        subject: "Your Fizzy code is %{code}"
+        sign_in:
+          title: "Fizzy verification code"
+          subtitle: "Please enter this 6-character verification code on the Fizzy sign-in page:"
+        sign_up:
+          title: "Welcome to Fizzy!"
+          subtitle: "Please enter this 6-character verification code to finish creating your account:"
+        code_validity: "This code will work for %{time}."
+        passkey_html: "P.S. You can make your account more secure and sign-in faster with a %{passkey_link}"
+        passkey_word: "Passkey"
+        passkey_text: "P.S. If you want to sign-in faster, and make your account more secure, add a passkey: %{url}"
+        help_html: "Need help? %{email}"
+        send_us_an_email: "Send us an email"
+    notification:
+      bundle_mailer:
+        notification:
+          subject: "Fizzy%{account_suffix}: New notifications"
+          title: "Notifications since %{time}"
+          you_have_html: "You have %{link}"
+          you_have:
+            one: "You have %{count} new notification"
+            other: "You have %{count} new notifications"
+          new_notifications:
+            one: "%{count} new notification"
+            other: "%{count} new notifications"
+          in_account: "in %{name}"
+          footer_intro: "Fizzy emails you about new notifications every few hours."
+          change_frequency: "Change how often you get these"
+          or: "or"
+          unsubscribe_all: "unsubscribe from all email notifications"
+        mention:
+          body:
+            mentioned_you: "%{name} mentioned you:"
+  user_mailer:
+    email_change_confirmation:
+      subject: "Confirm your new email address"
+      subtitle: "Confirm your email address change"
+      confirm_button: "Yes use this email address"
+      ignore_notice: "If you didn’t request this change, you can ignore this email. Your email address WILL NOT be changed unless you hit the button."
+      help_html: "Need help? %{email}"
+      send_us_an_email: "Send us an email"
