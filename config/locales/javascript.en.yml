@@ -1,0 +1,42 @@
+en:
+  javascript:
+    local_time:
+      less_than_a_minute_ago: "Less than a minute ago"
+      x_seconds_ago:
+        one: "%{count} second ago"
+        other: "%{count} seconds ago"
+      x_minutes_ago:
+        one: "%{count} minute ago"
+        other: "%{count} minutes ago"
+      x_hours_ago:
+        one: "%{count} hour ago"
+        other: "%{count} hours ago"
+      x_days_ago:
+        one: "%{count} day ago"
+        other: "%{count} days ago"
+      x_weeks_ago:
+        one: "%{count} week ago"
+        other: "%{count} weeks ago"
+      x_months_ago:
+        one: "%{count} month ago"
+        other: "%{count} months ago"
+      x_years_ago:
+        one: "%{count} year ago"
+        other: "%{count} years ago"
+      today: "today"
+      yesterday: "yesterday"
+      tomorrow: "tomorrow"
+      in_x_days:
+        one: "in %{count} day"
+        other: "in %{count} days"
+      x_days_ago_styled: "%{count} days ago"
+    bubble:
+      action_in: "%{action} in"
+      today_excl: "Today"
+      day: "day"
+      days: "days"
+      stalled_for: "Stalled for"
+    forms:
+      please_fill: "Please fill out this field"
+      no_selection: "No selection"
+      are_you_sure: "Are you sure?"

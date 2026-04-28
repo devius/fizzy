@@ -1,0 +1,102 @@
+en:
+  tags:
+    index:
+      all_tags: "All tags"
+      confirm_delete: "Are you sure?"
+      delete: "Delete"
+  columns:
+    show:
+      add_card_button:
+        add_card: "Add card"
+        add_a_card: "Add a card"
+  prompts:
+    boards:
+      users:
+        user:
+          me: "me"
+  bar:
+    bar:
+      search: "Search"
+  searches:
+    form:
+      search_fizzy: "Search Fizzy"
+      find_something: "Find something…"
+      search: "Search"
+      close_search: "Close search"
+    results:
+      no_matches: "No matches"
+    show:
+      page_title: "Search"
+      results_for: "Search results for \"%{query}\""
+      home: "Home"
+  reactions:
+    reaction:
+      reacted_label: "%{name} reacted %{content}"
+      delete_this_reaction: "Delete this reaction"
+      press_enter_to_delete: "Press enter to delete this reaction"
+    reactions:
+      add_your_own_reaction: "Add your own reaction"
+    new:
+      new_reaction: "New reaction"
+      add_a_reaction: "Add a reaction"
+      submit: "Submit"
+      cancel: "Cancel"
+  join_codes:
+    inactive:
+      page_title: "That code is all used up"
+      instructions: "Ask someone from %{account} to send you a new link or increase the limit."
+      ok: "OK"
+    new:
+      page_title: "Join %{account} in Fizzy"
+      email_address: "Email address"
+      continue: "Continue"
+  webhooks:
+    webhook:
+      confirm_remove: "Are you sure you want to permanently remove this webhook?"
+      remove: "Remove %{name}"
+    edit:
+      name_placeholder: "Name your Webhook…"
+      events: "Events"
+      trigger_payload: "Trigger a call to the Payload URL when:"
+      save_changes: "Save Changes"
+      go_back: "Go back"
+    form:
+      actions:
+        enable_all: "Enable all"
+        disable_all: "Disable all"
+    index:
+      page_title: "Webhooks"
+      intro: "Webhooks can notify another application when something happens in this Fizzy board. You’ll choose which events to subscribe to and provide a URL to receive the data."
+      example: "For example, you could create a webhook that posts to a Campfire chat in Basecamp when new cards are added to Fizzy."
+      set_up_new: "Set up a new webhook"
+    new:
+      page_title: "Set up a Webhook"
+      webhooks: "Webhooks"
+      name_placeholder: "Name this Webhook…"
+      payload_url: "Payload URL"
+      payload_url_help: "This is the URL for the app that will receive payloads from Fizzy."
+      url_pattern_title: "Must be an http:// or https:// URL"
+      events: "Events"
+      trigger_payload: "Trigger a call to the Payload URL when:"
+      create_webhook: "Create Webhook"
+      go_back: "Go back"
+    show:
+      webhooks: "Webhooks"
+      edit: "Edit"
+      reactivate: "Reactivate"
+      secret: "Secret"
+      secret_help_html: "We'll send a <code>X-Webhook-Signature</code> header with each request. You can generate a <code>HMAC</code> using <code>SHA256</code> of the request body with this secret to verify that the request came from us."
+      subscribed_to: "Subscribed to"
+      not_subscribed: "This Webhook isn't subscribed to any events. It will never trigger."
+      deliveries: "Deliveries"
+      no_deliveries: "This Webhook hasn't been triggered yet"
+  entropy:
+    auto_close:
+      days_until_auto_close: "Days until auto-close"
+    knob:
+      days: "Days"
+  active_storage:
+    blobs:
+      blob:
+        download: "Download"
+        download_title: "Download %{filename}"

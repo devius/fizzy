@@ -1,0 +1,31 @@
+ka:
+  public:
+    boards:
+      columns:
+        closeds:
+          show:
+            page_title: "სვეტი: შესრულებული"
+            no_cards_here: "ბარათები არ არის"
+        not_nows:
+          show:
+            page_title: "სვეტი: ახლა არა"
+            no_cards_here: "ბარათები არ არის"
+        show:
+          page_title: "სვეტი: %{name}"
+          no_cards_here: "ბარათები არ არის"
+        streams:
+          show:
+            page_title: "სვეტი: იქნებ?"
+            no_cards_here: "ბარათები არ არის"
+      show:
+        closed:
+          done: "შესრულებული"
+          maximize_column: "სვეტის გაშლა"
+        column:
+          maximize_column: "სვეტის გაშლა"
+        not_now:
+          not_now: "ახლა არა"
+          maximize_column: "სვეტის გაშლა"
+        stream:
+          maybe: "იქნებ?"
+          maximize_column: "სვეტის გაშლა"

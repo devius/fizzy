@@ -1,0 +1,42 @@
+ka:
+  javascript:
+    local_time:
+      less_than_a_minute_ago: "ერთ წუთზე ნაკლები"
+      x_seconds_ago:
+        one: "%{count} წამის წინ"
+        other: "%{count} წამის წინ"
+      x_minutes_ago:
+        one: "%{count} წუთის წინ"
+        other: "%{count} წუთის წინ"
+      x_hours_ago:
+        one: "%{count} საათის წინ"
+        other: "%{count} საათის წინ"
+      x_days_ago:
+        one: "%{count} დღის წინ"
+        other: "%{count} დღის წინ"
+      x_weeks_ago:
+        one: "%{count} კვირის წინ"
+        other: "%{count} კვირის წინ"
+      x_months_ago:
+        one: "%{count} თვის წინ"
+        other: "%{count} თვის წინ"
+      x_years_ago:
+        one: "%{count} წლის წინ"
+        other: "%{count} წლის წინ"
+      today: "დღეს"
+      yesterday: "გუშინ"
+      tomorrow: "ხვალ"
+      in_x_days:
+        one: "%{count} დღეში"
+        other: "%{count} დღეში"
+      x_days_ago_styled: "%{count} დღის წინ"
+    bubble:
+      action_in: "%{action} -ის შემდეგ"
+      today_excl: "დღეს"
+      day: "დღე"
+      days: "დღე"
+      stalled_for: "გაჭედილი"
+    forms:
+      please_fill: "გთხოვთ შეავსოთ ეს ველი"
+      no_selection: "არჩეული არ არის"
+      are_you_sure: "დარწმუნებული ხართ?"

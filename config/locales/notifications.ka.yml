@@ -1,0 +1,162 @@
+ka:
+  notifications:
+    tray:
+      settings_title: "შეტყობინებების პარამეტრები"
+      settings: "პარამეტრები"
+      see_more_new: "მეტი ახალი ჩვენება"
+      see_older: "ძველი ჩვენება"
+      mark_all_title: "ყველა შეტყობინების წაკითხულად მონიშვნა"
+      clear_all: "ყველას გასუფთავება"
+      toggle_aria: "შეტყობინებების ფანჯრის გადართვა"
+      notifications: "შეტყობინებები"
+    index:
+      page_title: "შეტყობინებები"
+      home: "მთავარი"
+      settings: "შეტყობინებების პარამეტრები"
+      read_notifications:
+        previously_seen: "ადრე ნახული"
+      unread_notifications:
+        new_for_you: "ახალი თქვენთვის"
+        mark_all_as_read: "ყველას წაკითხულად მონიშვნა"
+        nothing_new: "ახალი არაფერია"
+        showing_recent: "ნაჩვენებია %{showing} ბოლო (%{hidden} დამალულია)"
+    notification:
+      header:
+        card_number: "ბარათის ნომერი"
+      mention:
+        body:
+          mentioned_you: "%{name}-მა თქვენ @დაგინიშნათ"
+    settings:
+      show:
+        page_title: "შეტყობინებების პარამეტრები"
+        boards: "დაფები"
+      email:
+        heading: "ელფოსტის შეტყობინებები"
+        description: "მიიღეთ ერთიანი წერილი ყველა თქვენი შეტყობინებით — ყოველ რამდენიმე საათში, ყოველდღე ან კვირაში ერთხელ."
+        email_label: "შემატყობინეთ ახალი შეტყობინებების შესახებ ელფოსტით..."
+      push_notifications:
+        push_are: "Push შეტყობინებები"
+        "on": "ჩართულია"
+        "off": "გამორთულია"
+        turn_on: "ჩართეთ Push შეტყობინებები ამ მოწყობილობაზე"
+        help_fix: "დამეხმარეთ ამის გამოსწორებაში"
+        not_receiving: "შეტყობინებები არ მოგდით?"
+        not_working_explainer: "როცა Push შეტყობინებები არ მუშაობს, ეს ჩვეულებრივ შეიძლება გამოსწორდეს შეტყობინებების პარამეტრების შემოწმებით, რომ ისინი ნებადართულია."
+      browser:
+        turn_on_browser: "ჩართეთ შეტყობინებები %{browser}-ისთვის."
+        turn_on_website: "ჩართეთ შეტყობინებები ამ ვებსაიტისთვის."
+        view_site_info: "საიტის ინფორმაციის ნახვის ღილაკი"
+        the_switch: "გადამრთველი"
+        the_toggle_button: "გადამრთველი ღილაკი"
+        more_options: "მეტი ვარიანტი"
+        the_notification_bell: "შეტყობინების ზარი"
+        fallback_html: "დარწმუნდით, რომ შეტყობინებები ჩართულია <em>%{url}</em>-ისთვის თქვენი ბრაუზერის პარამეტრებში."
+        firefox_android:
+          step1_html: "შეეხეთ <em>%{icon}</em> მისამართის ველში."
+          step2_html: "შეეხეთ <em>Notification</em>-ს და შეცვალეთ <em>Allowed</em>-ად."
+        edge_desktop:
+          step1_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე მისამართის ველის მარცხნივ."
+          step2_html: "<em>Permissions for this site &gt; Notifications</em>-ში აირჩიეთ <em>Allow</em>."
+        firefox_desktop:
+          step1_html: "დააწკაპუნეთ <em>%{browser}</em>-ზე ზედა მარცხნივ."
+          step2_html: "დააწკაპუნეთ <em>Settings…</em>"
+          step3_html: "გვერდით პანელში დააწკაპუნეთ <em>Privacy & Security</em>-ზე."
+          step4_html: "ჩამოახვიეთ <em>Permissions</em>-მდე."
+          step5_html: "<em>Notifications</em>-ის გვერდით დააწკაპუნეთ <em>Settings</em>-ზე."
+          step6_html: "<em>%{url}</em>-ის გვერდით აირჩიეთ <em>Allow</em>."
+        chrome_desktop:
+          step1_html: "დააწკაპუნეთ <em>%{icon}</em> ხატულას მისამართის ველში."
+          step2_html: "დააწკაპუნეთ <em>Site Settings</em>-ზე."
+          step3_html: "დარწმუნდით, რომ შეტყობინებები <em>Allowed</em>-ია."
+        chrome_android:
+          step1_html: "შეეხეთ <em>%{icon}</em> მენიუს ღილაკს."
+          step2_html: "შეეხეთ <em>Settings</em>-ს."
+          step3_html: "შეეხეთ <em>Notifications</em>-ს."
+          step4_html: "შეეხეთ <em>%{icon}</em>-ს, რომ <em>Allow %{browser} notifications</em>."
+          step5_html: "შეეხეთ <em>%{icon}</em>-ს <em>Web apps</em>-ის გვერდით."
+          step6_html: "შეეხეთ <em>%{icon}</em>-ს და აირჩიეთ <em>Allow</em>."
+        safari_desktop_website:
+          step4_html: "სიაში დააწკაპუნეთ <em>%{url}</em>-ზე."
+        safari_desktop_browser:
+          step1_html: "დააწკაპუნეთ <em>%{browser}</em>-ზე ზედა მარცხნივ."
+          step2_html: "დააწკაპუნეთ <em>Settings…</em>"
+          step3_html: "დააწკაპუნეთ <em>Websites</em> ჩანართზე."
+          step4_html: "გვერდით პანელში დააწკაპუნეთ <em>Notifications</em>-ზე."
+          step5_html: "სიაში დააწკაპუნეთ <em>%{url}</em>-ზე."
+          step6_html: "აირჩიეთ <em>Allow</em>."
+        windows:
+          step1_html: "დააწკაპუნეთ <em>Start</em>-ზე, შემდეგ <em>Settings</em>-ზე."
+          step2_html: "გადადით <em>System &gt; Notification</em>-ზე."
+          step3_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე <em>ON</em> %{browser}-ისთვის."
+        mac:
+          step1_html: "დააწკაპუნეთ <em aria-label=\"Apple მენიუს\"></em> ზედა მარცხნივ."
+          step2_html: "დააწკაპუნეთ <em>System Settings…</em>"
+          step3_html: "დააწკაპუნეთ <em>Notifications</em>-ზე."
+          step4_html: "დააწკაპუნეთ <em>%{browser}</em>-ზე."
+          step5_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე, რომ <em>Allow notifications</em>."
+      system:
+        heading: "შეამოწმეთ თქვენი %{os}-ის პარამეტრები"
+        more_options: "მეტი ვარიანტი"
+        the_toggle_button: "გადამრთველი ღილაკი"
+        the_switch: "გადამრთველი"
+        allow_switch: "შეტყობინებების ნებართვის გადამრთველი"
+        allow_switch_button: "შეტყობინებების ნებართვის გადამრთველი ღილაკი"
+        fallback: "დარწმუნდით, რომ შეტყობინებები ნებადართულია %{browser}-ისთვის თქვენი სისტემის პარამეტრებში."
+        firefox_android:
+          step1_html: "შეეხეთ <em>%{icon}</em> მენიუს ღილაკს."
+          step2_html: "შეეხეთ <em>Settings</em>-ს."
+          step3_html: "შეეხეთ <em>Notifications</em>-ს."
+          step4_html: "შეეხეთ <em>%{icon}</em>-ს, რომ <em>Allow %{browser} notifications</em>."
+        windows:
+          step1_html: "დააწკაპუნეთ <em>Start</em>-ზე, შემდეგ <em>Settings</em>-ზე."
+          step2_html: "გადადით <em>System &gt; Notification</em>-ზე."
+          step3_fizzy_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე <em>ON</em> Fizzy-ისთვის."
+        mac:
+          step1_html: "დააწკაპუნეთ <em aria-label=\"Apple მენიუს\"></em> ზედა მარცხნივ."
+          step2_html: "დააწკაპუნეთ <em>System Settings…</em>"
+          step3_html: "დააწკაპუნეთ <em>Notifications</em>-ზე."
+          step4_fizzy_html: "დააწკაპუნეთ <em>Fizzy</em>-ზე."
+          step5_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე, რომ <em>Allow notifications</em>."
+        ios:
+          step1_html: "გახსენით <em>%{icon}</em> Settings აპი."
+          step2_html: "ჩამოახვიეთ და შეეხეთ <em>Fizzy</em>-ს."
+          step3_html: "შეეხეთ <em>Notifications</em>-ს."
+          step4_html: "შეეხეთ <em>%{icon}</em>-ს, რომ <em>Allow Notifications</em>."
+        chrome_android:
+          step1_html: "გახსენით <em>%{icon}</em> Settings აპი."
+          step2_html: "შეეხეთ <em>Notifications</em>-ს."
+          step3_html: "შეეხეთ <em>App notifications</em>-ს."
+          step4_html: "ჩამოახვიეთ <em>Fizzy</em>-მდე."
+          step5_html: "შეეხეთ <em>%{icon}</em>-ს, რომ <em>Allow Notifications</em>."
+      install:
+        or_install: "…ან დააინსტალირეთ Fizzy როგორც ვებ აპი."
+        install: "დააინსტალირეთ Fizzy როგორც ვებ აპი."
+        install_button: "აპის ხელმისაწვდომია — Fizzy-ის ინსტალაციის ღილაკი"
+        more_options: "მეტი ვარიანტი"
+        share_button: "გაზიარების ღილაკი"
+        ios_intro: "%{browser}-ში %{os}-ისთვის Push შეტყობინებების მისაღებად, ჯერ უნდა დააინსტალიროთ Fizzy როგორც ვებ აპი."
+        fallback: "ზოგიერთი პლატფორმა მოითხოვს Fizzy-ის როგორც ვებ აპის ინსტალაციას Push შეტყობინებების მისაღებად."
+        edge:
+          step1_html: "დააწკაპუნეთ <em>%{icon}</em>-ზე მისამართის ველში."
+          step2_html: "დააწკაპუნეთ <em>Install</em>-ზე."
+        chrome_android:
+          step1_html: "შეეხეთ <em>%{icon}</em> მენიუს ღილაკს."
+          step2_html: "მენიუში შეეხეთ <em>Install app</em>-ს."
+        firefox_android:
+          step1_html: "შეეხეთ <em>%{icon}</em> მენიუს ღილაკს."
+          step2_html: "მენიუში შეეხეთ <em>Install</em>-ს."
+        safari_desktop:
+          step1_html: "დააწკაპუნეთ <em>File</em>-ზე ზედა მარცხნივ."
+          step2_html: "დააწკაპუნეთ <em>Add to Dock…</em>"
+        ios:
+          step1_html: "შეეხეთ <em>%{icon}</em>-ს"
+          step2_html: "შეეხეთ <em>Add to Home Screen</em>-ს."
+    unsubscribes:
+      new:
+        unsubscribing: "%{name}-ის სახელით ხდება ყველა ელფოსტის შეტყობინებიდან გამოწერის გაუქმება…"
+        unsubscribe_now: "ახლავე გამოწერის გაუქმება"
+      show:
+        heading: "გამოწერა გაუქმებულია"
+        thanks_html: "გმადლობთ, %{name}! Fizzy აღარ გამოგიგზავნით ელფოსტის შეტყობინებებს. თუ გადაიფიქრებთ, შეგიძლიათ ისინი ისევ ჩართოთ %{link}-ში."
+        notification_settings: "შეტყობინებების პარამეტრები"
+        back_to_fizzy: "Fizzy-ში დაბრუნება"

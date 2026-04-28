@@ -1,0 +1,102 @@
+ka:
+  tags:
+    index:
+      all_tags: "ყველა ტეგი"
+      confirm_delete: "დარწმუნებული ხართ?"
+      delete: "წაშლა"
+  columns:
+    show:
+      add_card_button:
+        add_card: "ბარათის დამატება"
+        add_a_card: "ბარათის დამატება"
+  prompts:
+    boards:
+      users:
+        user:
+          me: "მე"
+  bar:
+    bar:
+      search: "ძიება"
+  searches:
+    form:
+      search_fizzy: "Fizzy-ში ძიება"
+      find_something: "მოძებნეთ რამე…"
+      search: "ძიება"
+      close_search: "ძიების დახურვა"
+    results:
+      no_matches: "შესაბამისობა არ მოიძებნა"
+    show:
+      page_title: "ძიება"
+      results_for: "ძიების შედეგები: \"%{query}\""
+      home: "მთავარი"
+  reactions:
+    reaction:
+      reacted_label: "%{name}-მა გამოხატა რეაქცია %{content}"
+      delete_this_reaction: "ამ რეაქციის წაშლა"
+      press_enter_to_delete: "ამ რეაქციის წასაშლელად დააჭირეთ Enter-ს"
+    reactions:
+      add_your_own_reaction: "თქვენი რეაქციის დამატება"
+    new:
+      new_reaction: "ახალი რეაქცია"
+      add_a_reaction: "რეაქციის დამატება"
+      submit: "გაგზავნა"
+      cancel: "გაუქმება"
+  join_codes:
+    inactive:
+      page_title: "ეს კოდი ამოწურულია"
+      instructions: "სთხოვეთ ვინმეს %{account}-დან, გამოგიგზავნოთ ახალი ბმული ან გაზარდოს ლიმიტი."
+      ok: "კარგი"
+    new:
+      page_title: "შემოუერთდით %{account}-ს Fizzy-ში"
+      email_address: "ელ. ფოსტის მისამართი"
+      continue: "გაგრძელება"
+  webhooks:
+    webhook:
+      confirm_remove: "ნამდვილად გსურთ ამ ვებჰუკის სამუდამოდ წაშლა?"
+      remove: "წაშლა: %{name}"
+    edit:
+      name_placeholder: "დაასახელეთ ვებჰუკი…"
+      events: "მოვლენები"
+      trigger_payload: "გამოიძახეთ Payload URL როდესაც:"
+      save_changes: "ცვლილებების შენახვა"
+      go_back: "უკან"
+    form:
+      actions:
+        enable_all: "ყველას ჩართვა"
+        disable_all: "ყველას გამორთვა"
+    index:
+      page_title: "ვებჰუკები"
+      intro: "ვებჰუკებს შეუძლიათ აცნობონ სხვა აპლიკაციას, როდესაც ამ Fizzy დაფაზე რაიმე ხდება. თქვენ აირჩევთ გამოწერის მოვლენებს და მიუთითებთ URL-ს მონაცემების მისაღებად."
+      example: "მაგალითად, შეგიძლიათ შექმნათ ვებჰუკი, რომელიც აქვეყნებს Campfire-ის ჩატში Basecamp-ში, როცა Fizzy-ში ახალი ბარათი დაემატება."
+      set_up_new: "ახალი ვებჰუკის დამატება"
+    new:
+      page_title: "ვებჰუკის დაყენება"
+      webhooks: "ვებჰუკები"
+      name_placeholder: "დაასახელეთ ეს ვებჰუკი…"
+      payload_url: "Payload URL"
+      payload_url_help: "ეს არის იმ აპის URL, რომელიც მიიღებს Fizzy-დან payload-ს."
+      url_pattern_title: "უნდა იყოს http:// ან https:// URL"
+      events: "მოვლენები"
+      trigger_payload: "გამოიძახეთ Payload URL როდესაც:"
+      create_webhook: "ვებჰუკის შექმნა"
+      go_back: "უკან"
+    show:
+      webhooks: "ვებჰუკები"
+      edit: "რედაქტირება"
+      reactivate: "გააქტიურება"
+      secret: "საიდუმლო"
+      secret_help_html: "თითოეულ მოთხოვნასთან ერთად გამოგიგზავნით <code>X-Webhook-Signature</code> სათაურს. შეგიძლიათ შექმნათ <code>HMAC</code> <code>SHA256</code>-ით მოთხოვნის body-ს ამ საიდუმლოთი გამოყენებით, რათა გადაამოწმოთ, რომ მოთხოვნა ჩვენგან მოვიდა."
+      subscribed_to: "გამოწერილია"
+      not_subscribed: "ეს ვებჰუკი არცერთ მოვლენაზე არ არის გამოწერილი. ის არასოდეს გააქტიურდება."
+      deliveries: "მიწოდებები"
+      no_deliveries: "ეს ვებჰუკი ჯერ არ გააქტიურებულა"
+  entropy:
+    auto_close:
+      days_until_auto_close: "ავტომატურ დახურვამდე დღეები"
+    knob:
+      days: "დღე"
+  active_storage:
+    blobs:
+      blob:
+        download: "ჩამოტვირთვა"
+        download_title: "ჩამოტვირთვა: %{filename}"

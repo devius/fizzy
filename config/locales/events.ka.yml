@@ -1,0 +1,36 @@
+ka:
+  events:
+    empty_days:
+      no_activity: "აქტივობა არ არის"
+      no_activity_for_days: "აქტივობა არ არის %{count} დღის განმავლობაში"
+      no_more_activity: "მეტი აქტივობა აღარ არის"
+    day_timeline:
+      column:
+        expand_column: "სვეტის გაშლა"
+        showing_recent: "ნაჩვენებია 100 ბოლო (%{hidden} დამალულია)"
+      columns:
+        show:
+          activity: "აქტივობა"
+    event:
+      layout:
+        card_number: "ბარათის ნომერი"
+    index:
+      page_title: "მთავარი"
+      activity_in: "აქტივობა"
+      activity_across: "აქტივობა"
+      latest_activity: "ბოლო აქტივობა"
+      add_board_button:
+        add_board: "დაფის დამატება"
+        add_a_board: "დაფის დამატება"
+      add_card_button:
+        add_card: "ბარათის დამატება"
+        add_a_card: "ბარათის დამატება"
+      filter:
+        by: "ავტორი"
+        board:
+          board: "დაფა…"
+          filter_placeholder: "ფილტრი…"
+        user:
+          everyone: "ყველა"
+          person: "პიროვნება…"
+          filter_placeholder: "ფილტრი…"

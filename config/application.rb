@@ -30,5 +30,9 @@ module Fizzy
     config.action_pack.passkey.challenge_url = -> { my_passkey_challenge_path(script_name: "") }
 
     config.mission_control.jobs.http_basic_auth_enabled = false
+
+    config.i18n.available_locales = [ :en, :ka ]
+    config.i18n.default_locale = :ka
+    config.i18n.fallbacks = [ :en ]
   end
 end

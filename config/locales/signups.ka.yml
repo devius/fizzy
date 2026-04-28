@@ -1,0 +1,16 @@
+ka:
+  signups:
+    new:
+      page_title: "Fizzy-ში რეგისტრაცია"
+      heading: "რეგისტრაცია"
+      email_placeholder: "შეიყვანეთ თქვენი ელფოსტა…"
+      instruction: "შეიყვანეთ ელფოსტა ანგარიშის შესაქმნელად."
+      lets_go: "წავედით"
+    completions:
+      new:
+        page_title: "დაასრულეთ რეგისტრაცია"
+        name_placeholder: "შეიყვანეთ სრული სახელი…"
+        intro: "ერთი ნაბიჯიღაა დარჩენილი. შეიყვანეთ სახელი, რომ მიიღოთ საკუთარი Fizzy ანგარიში."
+        errors_heading: "თქვენი ცვლილებები ვერ შეინახა:"
+        continue: "გაგრძელება"
+        import_account: "ან გააიმპორტეთ Fizzy ანგარიში"

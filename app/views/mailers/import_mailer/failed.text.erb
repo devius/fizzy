@@ -1,11 +1,11 @@
-Unfortunately, we couldn't import your Fizzy account.
+<%= t(".subtitle") %>
 
 <% if @import.failed_due_to_conflict? -%>
-It looks like the account you are trying to import already exists.
+<%= t(".conflict") %>
 <% elsif @import.failed_due_to_invalid_export? -%>
-The ZIP file isn't a Fizzy account export.
+<%= t(".invalid_export") %>
 <% else -%>
-This may be due to corrupted export data or a conflict with existing data. Please try again with a fresh export, or reach out for help if the problem persists.
+<%= t(".unknown") %>
 <% end -%>
 
-Need help? Send us an email at support@fizzy.do
+<%= t(".help", email: "support@fizzy.do") %>

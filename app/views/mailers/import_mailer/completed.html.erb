@@ -1,5 +1,5 @@
-<p class="subtitle">Your import of <%= @account.name %> is complete!</p>
+<p class="subtitle"><%= t(".subtitle", account_name: @account.name) %></p>
 
-<p><%= link_to "Go to your account", landing_url(script_name: @account.slug) %></p>
+<p><%= link_to t(".go_to_account"), landing_url(script_name: @account.slug) %></p>
 
-<p class="footer">Need help? <%= mail_to "support@fizzy.do", "Send us an email" %>.</p>
+<p class="footer"><%= t(".help_html", email: mail_to("support@fizzy.do", t(".send_us_an_email"))) %></p>

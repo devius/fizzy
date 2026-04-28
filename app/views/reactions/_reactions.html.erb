@@ -9,7 +9,7 @@
             class: "reactions__trigger btn btn--circle",
             data: { controller: "tooltip soft-keyboard", turbo_frame: dom_id(reactable, :new_reaction), action: "dialog#close soft-keyboard#open" } do %>
         <%= image_tag "boost-color.svg", aria: { hidden: true } %>
-        <span class="for-screen-reader">Add your own reaction</span>
+        <span class="for-screen-reader"><%= t(".add_your_own_reaction") %></span>
       <% end %>
     <% end %>
   </div>

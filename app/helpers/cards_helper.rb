@@ -21,15 +21,15 @@ module CardsHelper
   def card_title_tag(card)
     title = [
       card.title,
-      "added by #{card.creator.name}",
-      "in #{card.board.name}"
+      I18n.t("helpers.cards.added_by", name: card.creator.name),
+      I18n.t("helpers.cards.in_board", name: card.board.name)
     ]
-    title << "assigned to #{card.assignees.map(&:name).to_sentence}" if card.assignees.any?
+    title << I18n.t("helpers.cards.assigned_to", names: card.assignees.map(&:name).to_sentence) if card.assignees.any?
     title.join(" ")
   end
 
   def card_drafted_or_added(card)
-    card.drafted? ? "Drafted" : "Added"
+    card.drafted? ? I18n.t("helpers.cards.drafted") : I18n.t("helpers.cards.added")
   end
 
   def card_social_tags(card)
@@ -41,7 +41,7 @@ module CardsHelper
 
   def button_to_remove_card_image(card)
     button_to(card_image_path(card), method: :delete, class: "btn", data: { controller: "tooltip", action: "dialog#close" }) do
-      icon_tag("trash") + tag.span("Remove background image", class: "for-screen-reader")
+      icon_tag("trash") + tag.span(I18n.t("helpers.cards.remove_background_image"), class: "for-screen-reader")
     end
   end
 end

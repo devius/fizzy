@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { signedDifferenceInDays } from "helpers/date_helpers"
+import { t } from "lib/i18n"
 
 const REFRESH_INTERVAL = 3_600_000 // 1 hour (in milliseconds)
 
@@ -38,9 +39,9 @@ export default class extends Controller {
 
   #showEntropy() {
     this.#render({
-      top: this.#entropyCleanupInDays < 1 ? this.entropyValue.action : `${this.entropyValue.action} in`,
+      top: this.#entropyCleanupInDays < 1 ? this.entropyValue.action : t("bubble.action_in", { action: this.entropyValue.action }),
       center: this.#entropyCleanupInDays < 1 ? "!" : this.#entropyCleanupInDays,
-      bottom: this.#entropyCleanupInDays < 1 ? "Today" : (this.#entropyCleanupInDays === 1 ? "day" : "days"),
+      bottom: this.#entropyCleanupInDays < 1 ? t("bubble.today_excl") : (this.#entropyCleanupInDays === 1 ? t("bubble.day") : t("bubble.days")),
     })
   }
 
@@ -61,9 +62,9 @@ export default class extends Controller {
 
   #showStalled() {
     this.#render({
-      top: "Stalled for",
+      top: t("bubble.stalled_for"),
       center: signedDifferenceInDays(new Date(this.stalledValue.lastActivitySpikeAt), new Date()),
-      bottom: "days"
+      bottom: t("bubble.days")
     })
   }
 

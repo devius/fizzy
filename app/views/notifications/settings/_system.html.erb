@@ -1,57 +1,57 @@
 <div class="notifications-help hide-in-browser" data-notifications-target="details">
-  <h3>Check your <%= platform.operating_system %> settings</h3>
+  <h3><%= t(".heading", os: platform.operating_system) %></h3>
   <% case
     when platform.firefox? && platform.android? %>
       <ol>
-        <li>Tap the <em><%= icon_tag "menu-dots-vertical.svg", alt: "More options" %></em> menu button.</li>
-        <li>Tap <em>Settings</em>.</li>
-        <li>Tap <em>Notifications</em>.</li>
-        <li>Tap <em><%= icon_tag "switch", alt: "the toggle button" %></em> to <em>Allow <%= platform.browser.capitalize %> notifications</em>.</li>
+        <li><%= t(".firefox_android.step1_html", icon: icon_tag("menu-dots-vertical.svg", alt: t(".more_options"))) %></li>
+        <li><%= t(".firefox_android.step2_html") %></li>
+        <li><%= t(".firefox_android.step3_html") %></li>
+        <li><%= t(".firefox_android.step4_html", icon: icon_tag("switch", alt: t(".the_toggle_button")), browser: platform.browser.capitalize) %></li>
       </ol>
     <% when platform.edge? && platform.desktop? %>
       <ol>
-        <li>Click <em>Start</em>, then <em>Settings</em>.</li>
-        <li>Go to <em>System &gt; Notification</em>.</li>
-        <li>Click <em><%= icon_tag "switch", alt: "the toggle button" %></em> <em>ON</em> for Fizzy.</li>
+        <li><%= t(".windows.step1_html") %></li>
+        <li><%= t(".windows.step2_html") %></li>
+        <li><%= t(".windows.step3_fizzy_html", icon: icon_tag("switch", alt: t(".the_toggle_button"))) %></li>
       </ol>
     <% when (platform.firefox? || platform.chrome?) && platform.desktop? %>
       <ol>
         <% if platform.windows? %>
-          <li>Click <em>Start</em>, then <em>Settings</em>.</li>
-          <li>Go to <em>System &gt; Notification</em>.</li>
-          <li>Click <em><%= icon_tag "switch", alt: "the toggle button" %></em> <em>ON</em> for Fizzy.</li>
+          <li><%= t(".windows.step1_html") %></li>
+          <li><%= t(".windows.step2_html") %></li>
+          <li><%= t(".windows.step3_fizzy_html", icon: icon_tag("switch", alt: t(".the_toggle_button"))) %></li>
         <% else %>
-          <li>Click <em aria-label="the Apple menu"></em> in the top left.</li>
-          <li>Click <em>System Settings…</em></li>
-          <li>Click <em>Notifications</em>.</li>
-          <li>Click <em>Fizzy</em>.</li>
-          <li>Click <em><%= icon_tag "switch", alt: "the allow notifications switch" %></em> to <em>Allow notifications</em>.</li>
+          <li><%= t(".mac.step1_html") %></li>
+          <li><%= t(".mac.step2_html") %></li>
+          <li><%= t(".mac.step3_html") %></li>
+          <li><%= t(".mac.step4_fizzy_html") %></li>
+          <li><%= t(".mac.step5_html", icon: icon_tag("switch", alt: t(".allow_switch"))) %></li>
         <% end %>
       </ol>
     <% when platform.safari? && platform.desktop? %>
       <ol>
-        <li>Click <em aria-label="the Apple menu"></em> in the top left.</li>
-        <li>Click <em>System Settings…</em></li>
-        <li>Click <em>Notifications</em>.</li>
-        <li>Click <em>Fizzy</em>.</li>
-        <li>Click <em><%= icon_tag "switch", alt: "the allow notifications switch" %></em> to <em>Allow notifications</em>.</li>
+        <li><%= t(".mac.step1_html") %></li>
+        <li><%= t(".mac.step2_html") %></li>
+        <li><%= t(".mac.step3_html") %></li>
+        <li><%= t(".mac.step4_fizzy_html") %></li>
+        <li><%= t(".mac.step5_html", icon: icon_tag("switch", alt: t(".allow_switch"))) %></li>
       </ol>
     <% when (platform.safari? || platform.chrome?) && platform.ios? %>
       <ol>
-        <li>Open the <em><%= icon_tag "gear", aria: { hidden: "true" } %></em> Settings app.</li>
-        <li>Scroll to and tap <em>Fizzy</em>.</li>
-        <li>Tap <em>Notifications</em>.</li>
-        <li>Tap <em><%= icon_tag "switch", alt: "the allow notifications switch button" %></em> to <em>Allow Notifications</em>.</li>
+        <li><%= t(".ios.step1_html", icon: icon_tag("gear", aria: { hidden: "true" })) %></li>
+        <li><%= t(".ios.step2_html") %></li>
+        <li><%= t(".ios.step3_html") %></li>
+        <li><%= t(".ios.step4_html", icon: icon_tag("switch", alt: t(".allow_switch_button"))) %></li>
       </ol>
     <% when platform.chrome? && platform.android? %>
       <ol>
-        <li>Open the <em><%= icon_tag "gear", aria: { hidden: "true" } %></em> Settings app.</li>
-        <li>Tap <em>Notifications</em>.</li>
-        <li>Tap <em>App notifications</em>.</li>
-        <li>Scroll to <em>Fizzy</em>.</li>
-        <li>Tap <em><%= icon_tag "switch", alt: "the switch" %></em> to <em>Allow Notifications</em>.</li>
+        <li><%= t(".chrome_android.step1_html", icon: icon_tag("gear", aria: { hidden: "true" })) %></li>
+        <li><%= t(".chrome_android.step2_html") %></li>
+        <li><%= t(".chrome_android.step3_html") %></li>
+        <li><%= t(".chrome_android.step4_html") %></li>
+        <li><%= t(".chrome_android.step5_html", icon: icon_tag("switch", alt: t(".the_switch"))) %></li>
       </ol>
     <% else %>
-      <p>Ensure notifications are allowed for <%= platform.browser.capitalize %> in your system settings.</p>
+      <p><%= t(".fallback", browser: platform.browser.capitalize) %></p>
   <% end %>
 </div>

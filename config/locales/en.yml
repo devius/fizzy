@@ -28,4 +28,67 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      skip_to_main: "Skip to main content"
+    public:
+      skip_to_main: "Skip to main content"
+    lightbox:
+      label: "Image Viewer (Press escape to close)"
+      close: "Close (esc)"
+    shared:
+      welcome_letter:
+        close: "Close dialog"
+        heading: "Welcome, and thanks for signing up for Fizzy."
+        intro_html: "To get you started, we set you up with a Fizzy board called <em>Playground</em>. It’s got a few cards designed to help you learn Fizzy itself. Open each card, go through the simple steps, and you’ll be an expert in Fizzy in no time. You’ll see the <em>Playground</em> when you close this message."
+        contact_html: "If you ever need a hand, please contact me directly at jason@37signals.com. I'm here for you, we’re all here for you."
+        thanks: "Thanks again and all the best,"
+        signature_role_html: "<strong>Jason Fried</strong>, jason@37signals.com<br><em>CEO &amp; co-founder of 37signals, makers of Fizzy, Basecamp, and HEY</em>"
+      colophon:
+        designed_by: "is designed, built, and backed by"
+        makers_of: ", makers of"
+        and: "and"
+
+  my:
+    menus:
+      jump:
+        close: "Close menu"
+        home: "Home"
+        assigned_to_me: "Assigned to me"
+        added_by_me: "Added by me"
+        no_matches: "Nothing matches that filter"
+      boards:
+        title: "Boards"
+        add: "Add a board"
+      tags:
+        title: "Tags"
+      people:
+        title: "People"
+        invite: "Invite people"
+      settings:
+        title: "Settings"
+        account: "Account Settings"
+        profile: "My Profile"
+        all_notifications: "All notifications"
+        notification_settings: "Notification Settings"
+        sign_out: "Sign out"
+      shortcuts:
+        title: "Shortcuts"
+        golden: "Golden cards"
+        stalled: "Stalled cards"
+        closing_soon: "Cards closing soon"
+        added_today: "Added today"
+        done_today: "Done today"
+      accounts:
+        title: "Accounts"
+      custom_views:
+        title: "Custom views"
+        create: "Create a custom view"
+
+  boards:
+    new:
+      page_title: "Create a new board"
+      name_placeholder: "Name it…"
+      name_blank: "Board names can’t be blank"
+      submit: "Create board"
+      cancel: "Cancel and go back"

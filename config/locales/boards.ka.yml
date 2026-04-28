@@ -1,0 +1,88 @@
+ka:
+  boards:
+    access_toggle:
+      give_access: "%{name}-ს წვდომის მიცემა"
+
+    columns:
+      empty_placeholder:
+        no_cards: "აქ ბარათები არ არის"
+        drag_cards: "ჩამოათრიეთ ბარათები აქ"
+      show:
+        page_title: "სვეტი: %{name}"
+      closeds:
+        show:
+          page_title: "სვეტი: დასრულებული"
+      not_nows:
+        show:
+          page_title: "სვეტი: ახლა არა"
+      streams:
+        show:
+          page_title: "სვეტი: იქნებ?"
+
+    edit:
+      page_title: "დაფის პარამეტრები"
+      admins_only: "ამ პარამეტრების შეცვლა მხოლოდ ადმინებს შეუძლიათ"
+      self_removal_prompt: "დარწმუნებული ხართ, რომ გსურთ საკუთარი თავის წაშლა ამ დაფიდან? უკან ვერ დაბრუნდებით, თუ ვინმე არ მოგიწვევთ."
+      save_changes: "ცვლილებების შენახვა"
+      cancel: "გაუქმება და უკან დაბრუნება"
+
+      auto_close:
+        heading: "ავტომატური დახურვა"
+        description: "Fizzy არ უშვებს, რომ ძველი ბარათები სამუდამოდ დარჩეს. ბარათები ავტომატურად გადადის „ახლა არა“ სვეტში, თუ მათ არავინ აახლებს, არ აკომენტარებს ან არ გადაადგილებს გარკვეული დროის განმავლობაში…"
+
+      delete:
+        delete_this_board: "ამ დაფის წაშლა"
+        confirm_heading: "წავშალოთ ეს დაფა?"
+        confirm_message: "დარწმუნებული ხართ, რომ გსურთ ამ დაფისა და მასზე არსებული ყველა ბარათის სამუდამოდ წაშლა? ამ მოქმედების გაუქმება შეუძლებელია."
+        cancel: "გაუქმება"
+        delete_board: "დაფის წაშლა"
+
+      name:
+        name_placeholder: "დაფის სახელი…"
+
+      publication:
+        heading: "საჯარო ბმული"
+        description: "ჩართეთ საჯარო ბმული, რომ ეს დაფა მთელ მსოფლიოს გაუზიაროთ. მათ შესვლა არ დასჭირდებათ და Fizzy-ში სხვა არაფერს ნახავენ."
+        turn_off: "საჯარო ბმულის გამორთვა"
+        turn_on: "საჯარო ბმულის ჩართვა"
+        copy_link: "საჯარო ბმულის კოპირება"
+        description_prompt: "დაამატე არასავალდებულო აღწერა საჯარო გვერდისთვის"
+        description_placeholder: "დაამატე საჯარო შენიშვნა ამ დაფის შესახებ…"
+        save_changes: "ცვლილებების შენახვა"
+
+      users:
+        heading: "ვის აქვს ამ დაფაზე წვდომა?"
+        everyone: "ყველას"
+        give_everyone_access: "ყველას მიეცეს ამ დაფაზე წვდომა"
+        filter_placeholder: "ფილტრი…"
+        select_all: "ყველას მონიშვნა"
+        select_none: "მონიშვნის გაუქმება"
+
+    show:
+      closed:
+        name: "დასრულებული"
+      not_now:
+        name: "ახლა არა"
+      stream:
+        name: "იქნებ?"
+      column:
+        maximize_column: "სვეტის გადიდება"
+      filtered_cards:
+        no_matches: "ამ ფილტრს ბარათები არ ემთხვევა"
+      menu:
+        column:
+          column_options: "სვეტის პარამეტრები"
+          edit_column: "სვეტის რედაქტირება"
+          move_left: "მარცხნივ გადატანა"
+          move_right: "მარჯვნივ გადატანა"
+          delete_column: "სვეტის წაშლა"
+          delete_confirm: "დარწმუნებული ხართ, რომ გსურთ ამ სვეტის წაშლა? ბარათები „იქნებ?“ სვეტში დაბრუნდება."
+          save_changes: "ცვლილებების შენახვა"
+        column_form:
+          name_placeholder: "დაასახელე ეს სვეტი"
+          name_blank: "სვეტის სახელი არ უნდა იყოს ცარიელი"
+        columns:
+          add_column: "სვეტის დამატება"
+          add_column_label: "სვეტის დამატება"
+        maximize:
+          expand_column: "სვეტის გაშლა"

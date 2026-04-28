@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { toSentence } from "helpers/text_helpers"
+import { t } from "lib/i18n"
 
 export default class extends Controller {
   #hiddenField
@@ -8,7 +9,7 @@ export default class extends Controller {
   static values = {
     selectPropertyName: { type: String, default: "aria-checked" },
     defaultValue: String,
-    noSelectionLabel: { type: String, default: "No selection" },
+    noSelectionLabel: { type: String, default: "" },
     labelPrefix: String
   }
 
@@ -39,7 +40,7 @@ export default class extends Controller {
   get #selectedLabel() {
     const selectedValues = this.#selectedValues()
     if (selectedValues.length === 0) {
-      return this.noSelectionLabelValue
+      return this.noSelectionLabelValue || t("forms.no_selection")
     }
 
     const labels = this.#selectedItems.map(item => item.dataset.multiSelectionComboboxLabel)

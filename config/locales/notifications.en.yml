@@ -1,0 +1,162 @@
+en:
+  notifications:
+    tray:
+      settings_title: "Notification Settings"
+      settings: "Settings"
+      see_more_new: "See more new items"
+      see_older: "See older items"
+      mark_all_title: "Mark all notifications as read"
+      clear_all: "Clear all"
+      toggle_aria: "Toggle notifications stack"
+      notifications: "Notifications"
+    index:
+      page_title: "Notifications"
+      home: "Home"
+      settings: "Notification settings"
+      read_notifications:
+        previously_seen: "Previously seen"
+      unread_notifications:
+        new_for_you: "New for you"
+        mark_all_as_read: "Mark all as read"
+        nothing_new: "Nothing new for you"
+        showing_recent: "Showing the %{showing} most recent (%{hidden} are hidden)"
+    notification:
+      header:
+        card_number: "Card number"
+      mention:
+        body:
+          mentioned_you: "%{name} @mentioned you"
+    settings:
+      show:
+        page_title: "Notification Settings"
+        boards: "Boards"
+      email:
+        heading: "Email Notifications"
+        description: "Get a single email with all your notifications every few hours, daily, or weekly."
+        email_label: "Email me about new notifications..."
+      push_notifications:
+        push_are: "Push notifications are"
+        "on": "ON"
+        "off": "OFF"
+        turn_on: "Turn ON push notifications on this device"
+        help_fix: "Help me fix this"
+        not_receiving: "Not receiving notifications?"
+        not_working_explainer: "When push notifications aren’t working, this can usually be fixed by checking your notification settings to make sure they’re allowed."
+      browser:
+        turn_on_browser: "Turn on notifications for %{browser}."
+        turn_on_website: "Turn on notifications for this website."
+        view_site_info: "the View site information button"
+        the_switch: "the switch"
+        the_toggle_button: "the toggle button"
+        more_options: "More options"
+        the_notification_bell: "the notification bell"
+        fallback_html: "Ensure notifications are enabled for <em>%{url}</em> in your web browser settings."
+        firefox_android:
+          step1_html: "Tap <em>%{icon}</em> in the address bar."
+          step2_html: "Tap <em>Notification</em> to change to <em>Allowed</em>."
+        edge_desktop:
+          step1_html: "Click <em>%{icon}</em> left of the address bar."
+          step2_html: "Under <em>Permissions for this site &gt; Notifications</em>, choose <em>Allow</em>."
+        firefox_desktop:
+          step1_html: "Click <em>%{browser}</em> in the top left."
+          step2_html: "Click <em>Settings…</em>"
+          step3_html: "Click <em>Privacy & Security</em> in the sidebar."
+          step4_html: "Scroll down to <em>Permissions</em>."
+          step5_html: "Click <em>Settings</em> next to <em>Notifications</em>."
+          step6_html: "Select <em>Allow</em> next to <em>%{url}</em>."
+        chrome_desktop:
+          step1_html: "Click the <em>%{icon}</em> icon in the address bar."
+          step2_html: "Click <em>Site Settings</em>."
+          step3_html: "Ensure notifications are <em>Allowed</em>."
+        chrome_android:
+          step1_html: "Tap the <em>%{icon}</em> menu button."
+          step2_html: "Tap <em>Settings</em>."
+          step3_html: "Tap <em>Notifications</em>."
+          step4_html: "Tap <em>%{icon}</em> to <em>Allow %{browser} notifications</em>."
+          step5_html: "Tap <em>%{icon}</em> next to <em>Web apps</em>."
+          step6_html: "Tap <em>%{icon}</em> and select <em>Allow</em>."
+        safari_desktop_website:
+          step4_html: "Click <em>%{url}</em> in the list."
+        safari_desktop_browser:
+          step1_html: "Click <em>%{browser}</em> in the top left."
+          step2_html: "Click <em>Settings…</em>"
+          step3_html: "Click the <em>Websites</em> tab."
+          step4_html: "Click <em>Notifications</em> in the sidebar."
+          step5_html: "Click <em>%{url}</em> in the list."
+          step6_html: "Select <em>Allow</em>."
+        windows:
+          step1_html: "Click <em>Start</em>, then <em>Settings</em>."
+          step2_html: "Go to <em>System &gt; Notification</em>."
+          step3_html: "Click <em>%{icon}</em> <em>ON</em> for %{browser}."
+        mac:
+          step1_html: "Click <em aria-label=\"the Apple menu\"></em> in the top left."
+          step2_html: "Click <em>System Settings…</em>"
+          step3_html: "Click <em>Notifications</em>."
+          step4_html: "Click <em>%{browser}</em>."
+          step5_html: "Click <em>%{icon}</em> to <em>Allow notifications</em>."
+      system:
+        heading: "Check your %{os} settings"
+        more_options: "More options"
+        the_toggle_button: "the toggle button"
+        the_switch: "the switch"
+        allow_switch: "the allow notifications switch"
+        allow_switch_button: "the allow notifications switch button"
+        fallback: "Ensure notifications are allowed for %{browser} in your system settings."
+        firefox_android:
+          step1_html: "Tap the <em>%{icon}</em> menu button."
+          step2_html: "Tap <em>Settings</em>."
+          step3_html: "Tap <em>Notifications</em>."
+          step4_html: "Tap <em>%{icon}</em> to <em>Allow %{browser} notifications</em>."
+        windows:
+          step1_html: "Click <em>Start</em>, then <em>Settings</em>."
+          step2_html: "Go to <em>System &gt; Notification</em>."
+          step3_fizzy_html: "Click <em>%{icon}</em> <em>ON</em> for Fizzy."
+        mac:
+          step1_html: "Click <em aria-label=\"the Apple menu\"></em> in the top left."
+          step2_html: "Click <em>System Settings…</em>"
+          step3_html: "Click <em>Notifications</em>."
+          step4_fizzy_html: "Click <em>Fizzy</em>."
+          step5_html: "Click <em>%{icon}</em> to <em>Allow notifications</em>."
+        ios:
+          step1_html: "Open the <em>%{icon}</em> Settings app."
+          step2_html: "Scroll to and tap <em>Fizzy</em>."
+          step3_html: "Tap <em>Notifications</em>."
+          step4_html: "Tap <em>%{icon}</em> to <em>Allow Notifications</em>."
+        chrome_android:
+          step1_html: "Open the <em>%{icon}</em> Settings app."
+          step2_html: "Tap <em>Notifications</em>."
+          step3_html: "Tap <em>App notifications</em>."
+          step4_html: "Scroll to <em>Fizzy</em>."
+          step5_html: "Tap <em>%{icon}</em> to <em>Allow Notifications</em>."
+      install:
+        or_install: "…or install Fizzy as a web app."
+        install: "Install Fizzy as a web app."
+        install_button: "the app available - install Fizzy button"
+        more_options: "More options"
+        share_button: "the share button"
+        ios_intro: "To receive push notifications in %{browser} for %{os}, you must first install Fizzy as a web app."
+        fallback: "Some platforms require you to install Fizzy as a web app to receive push notifications."
+        edge:
+          step1_html: "Click <em>%{icon}</em>in the address bar."
+          step2_html: "Click <em>Install</em>."
+        chrome_android:
+          step1_html: "Tap the <em>%{icon}</em> menu button."
+          step2_html: "Tap <em>Install app</em> in the menu."
+        firefox_android:
+          step1_html: "Tap the <em>%{icon}</em> menu button."
+          step2_html: "Tap <em>Install</em> in the menu."
+        safari_desktop:
+          step1_html: "Click <em>File</em> in the top left."
+          step2_html: "Click <em>Add to Dock…</em>"
+        ios:
+          step1_html: "Tap <em>%{icon}</em>"
+          step2_html: "Tap <em>Add to Home Screen</em>."
+    unsubscribes:
+      new:
+        unsubscribing: "Unsubscribing from all email notifications as %{name}…"
+        unsubscribe_now: "Unsubscribe now"
+      show:
+        heading: "You’re unsubscribed"
+        thanks_html: "Thanks, %{name}! Fizzy won’t send you any more email notifications. If you change your mind, you can turn them back on in %{link}."
+        notification_settings: "Notification Settings"
+        back_to_fizzy: "Back to Fizzy"

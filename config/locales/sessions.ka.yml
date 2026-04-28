@@ -1,0 +1,33 @@
+ka:
+  sessions:
+    footer:
+      need_help_html: "დახმარება გჭირდებათ? %{link}."
+      send_email: "მოგვწერეთ ელფოსტა"
+    new:
+      page_title: "შეიყვანეთ ელფოსტა"
+      heading: "შესვლა Fizzy-ში"
+      email_placeholder: "შეიყვანეთ თქვენი ელფოსტა…"
+      signup_prompt_html: "<strong>პირველად ხართ აქ?</strong> %{sign_up}, ანგარიშის შესაქმნელად. <strong>უკვე გაქვთ ანგარიში?</strong> შეიყვანეთ ელფოსტა და დაგეხმარებით შესვლაში."
+      sign_up: "დარეგისტრირდით"
+      signin_prompt: "შეიყვანეთ ელფოსტა და დაგეხმარებით შესვლაში."
+      lets_go: "წავედით"
+      passkey_sign_in: "Passkey-ით შესვლა"
+    magic_links:
+      show:
+        page_title: "შეამოწმეთ ელფოსტა"
+        instruction: "შემდეგ შეიყვანეთ ელფოსტაში მოცემული დამადასტურებელი კოდი:"
+        code_validity_html: "%{email}-ზე გაგზავნილი კოდი იმოქმედებს %{duration}."
+        dev_code_label: "ფსსტ, აი თქვენი კოდი:"
+    menus:
+      show:
+        page_title: "ანგარიშის არჩევა"
+        your_accounts: "თქვენი Fizzy ანგარიშები"
+        no_accounts_heading: "ჰმმ..."
+        no_accounts_message: "თქვენ არ გაქვთ Fizzy ანგარიში."
+        sign_up_new: "ახალი Fizzy ანგარიშის რეგისტრაცია"
+    starts:
+      new:
+        page_title: "მიმდინარეობს შესვლა..."
+        intro: "ერთ წამს, ვახდენთ თქვენს შესვლას %{account}-ში."
+        sign_in: "შესვლა"
+        signing_in: "მიმდინარეობს შესვლა..."
