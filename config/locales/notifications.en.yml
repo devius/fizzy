@@ -26,6 +26,22 @@ en:
       mention:
         body:
           mentioned_you: "%{name} @mentioned you"
+    event_payload:
+      body:
+        assigned: "Assigned to you by %{creator}"
+        added: "Added by %{creator}"
+        moved_to_done: "Moved to Done by %{creator}"
+        closed: "Closed by %{creator}"
+        reopened: "Reopened by %{creator}"
+        moved_to_column: "Moved to %{column} by %{creator}"
+        moved: "Moved by %{creator}"
+        sent_back_to_triage: "Moved back to Maybe? by %{creator}"
+        moved_to_location: "Moved to %{location} by %{creator}"
+        renamed_to: "Renamed to %{new_title} by %{creator}"
+        renamed: "Renamed by %{creator}"
+        postponed: "Moved to Not Now by %{creator}"
+        auto_postponed: "Moved to Not Now due to inactivity"
+        updated: "Updated by %{creator}"
     settings:
       show:
         page_title: "Notification Settings"

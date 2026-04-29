@@ -4,7 +4,7 @@ class Notification::EventPayload < Notification::DefaultPayload
   def title
     case event.action
     when "comment_created"
-      "RE: #{card_title}"
+      I18n.t("helpers.notifications.re_prefix", title: card_title)
     else
       card_title
     end
@@ -15,39 +15,27 @@ class Notification::EventPayload < Notification::DefaultPayload
     when "comment_created"
       format_excerpt(event.eventable.body, length: 200)
     when "card_assigned"
-      "Assigned to you by #{event.creator.name}"
+      t_body("assigned")
     when "card_published"
-      "Added by #{event.creator.name}"
+      t_body("added")
     when "card_closed"
-      card.closure ? "Moved to Done by #{event.creator.name}" : "Closed by #{event.creator.name}"
+      card.closure ? t_body("moved_to_done") : t_body("closed")
     when "card_reopened"
-      "Reopened by #{event.creator.name}"
+      t_body("reopened")
     when "card_triaged"
-      if column_name.present?
-        "Moved to #{column_name} by #{event.creator.name}"
-      else
-        "Moved by #{event.creator.name}"
-      end
+      column_name.present? ? t_body("moved_to_column", column: column_name) : t_body("moved")
     when "card_sent_back_to_triage"
-      "Moved back to Maybe? by #{event.creator.name}"
+      t_body("sent_back_to_triage")
     when "card_board_changed", "card_collection_changed"
-      if new_location_name.present?
-        "Moved to #{new_location_name} by #{event.creator.name}"
-      else
-        "Moved by #{event.creator.name}"
-      end
+      new_location_name.present? ? t_body("moved_to_location", location: new_location_name) : t_body("moved")
     when "card_title_changed"
-      if new_title.present?
-        "Renamed to #{new_title} by #{event.creator.name}"
-      else
-        "Renamed by #{event.creator.name}"
-      end
+      new_title.present? ? t_body("renamed_to", new_title: new_title) : t_body("renamed")
     when "card_postponed"
-      "Moved to Not Now by #{event.creator.name}"
+      t_body("postponed")
     when "card_auto_postponed"
-      "Moved to Not Now due to inactivity"
+      I18n.t("notifications.event_payload.body.auto_postponed")
     else
-      "Updated by #{event.creator.name}"
+      t_body("updated")
     end
   end
 
@@ -78,7 +66,11 @@ class Notification::EventPayload < Notification::DefaultPayload
     end
 
     def card_title
-      card.title.presence || "Card #{card.number}"
+      card.title.presence || I18n.t("helpers.notifications.card_number", number: card.number)
+    end
+
+    def t_body(key, **vars)
+      I18n.t("notifications.event_payload.body.#{key}", creator: event.creator.name, **vars)
     end
 
     def event_particulars

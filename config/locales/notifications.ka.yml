@@ -26,6 +26,22 @@ ka:
       mention:
         body:
           mentioned_you: "%{name}-მა თქვენ @მოგნიშნათ"
+    event_payload:
+      body:
+        assigned: "თქვენ მოგენიჭათ %{creator}-ის მიერ"
+        added: "დამატებულია %{creator}-ის მიერ"
+        moved_to_done: "გადატანილია „დასრულდა“-ში %{creator}-ის მიერ"
+        closed: "დახურულია %{creator}-ის მიერ"
+        reopened: "ხელახლა გახსნილია %{creator}-ის მიერ"
+        moved_to_column: "გადატანილია %{column}-ში %{creator}-ის მიერ"
+        moved: "გადატანილია %{creator}-ის მიერ"
+        sent_back_to_triage: "დაბრუნებულია „იქნებ?“-ში %{creator}-ის მიერ"
+        moved_to_location: "გადატანილია %{location}-ში %{creator}-ის მიერ"
+        renamed_to: "გადარქმეულია „%{new_title}“-ად %{creator}-ის მიერ"
+        renamed: "გადარქმეულია %{creator}-ის მიერ"
+        postponed: "გადადებულია „ახლა არა“-ში %{creator}-ის მიერ"
+        auto_postponed: "უმოქმედობის გამო გადადებულია „ახლა არა“-ში"
+        updated: "განახლებულია %{creator}-ის მიერ"
     settings:
       show:
         page_title: "შეტყობინებების პარამეტრები"
