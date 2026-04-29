@@ -52,7 +52,7 @@ ka:
 
       users:
         heading: "ვის აქვს ამ დაფაზე წვდომა?"
-        everyone: "ყველა"
+        everyone: "ყველას"
         give_everyone_access: "ყველას მიეცეს ამ დაფაზე წვდომა"
         filter_placeholder: "ფილტრი…"
         select_all: "ყველას მონიშვნა"
