@@ -7,7 +7,9 @@ ka:
       unverified: "დაუდასტურებელი"
       unverified_explanation: "ამ ელფოსტაზე გაგზავნილია შესვლის კოდი, მაგრამ მომხმარებელს ჯერ არ შემოუსვლია ვინაობის დასადასტურებლად."
       cards_assigned_to: "რომელი ბარათებია მინიჭებული %{name}-ზე?"
+      cards_assigned_to_me: "რომელი ბარათებია მინიჭებული ჩემზე?"
       cards_added_by: "რომელი ბარათები დაამატა %{name}-მა?"
+      cards_added_by_me: "რომელი ბარათები დავამატე მე?"
       manage_passkeys: "Passkey-ების მართვა"
       sign_out_device: "Fizzy-დან გასვლა ამ მოწყობილობაზე"
     edit:
