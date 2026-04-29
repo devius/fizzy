@@ -7,7 +7,9 @@ en:
       unverified: "Unverified"
       unverified_explanation: "A sign-in code has been sent to this email address, but the user has not yet logged in to confirm their identity."
       cards_assigned_to: "Which cards are assigned to %{name}?"
+      cards_assigned_to_me: "Which cards are assigned to me?"
       cards_added_by: "Which cards were added by %{name}?"
+      cards_added_by_me: "Which cards were added by me?"
       manage_passkeys: "Manage passkeys"
       sign_out_device: "Sign out of Fizzy on this device"
     edit:

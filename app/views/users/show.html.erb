@@ -1,5 +1,5 @@
 <% @page_title = @user.name %>
-<% me_or_you = Current.user == @user ? "me" : @user.first_name %>
+<% viewing_self = Current.user == @user %>
 
 <div class="settings settings--profile">
   <div class="settings__panel panel shadow txt-align-center">
@@ -31,9 +31,9 @@
 
       <% if @user.verified? %>
         <div class="flex-inline center justify-center flex-wrap gap">
-          <%= link_to t(".cards_assigned_to", name: me_or_you),
+          <%= link_to (viewing_self ? t(".cards_assigned_to_me") : t(".cards_assigned_to", name: @user.first_name)),
                 cards_path(assignee_ids: [ @user.id ], sorted_by: "newest"), class: "btn btn--link", data: { turbo_frame: "_top" } %>
-          <%= link_to t(".cards_added_by", name: me_or_you),
+          <%= link_to (viewing_self ? t(".cards_added_by_me") : t(".cards_added_by", name: @user.first_name)),
                 cards_path(creator_ids: [ @user.id ], sorted_by: "newest"), class: "btn btn--link", data: { turbo_frame: "_top" } %>
         </div>
       <% end %>
