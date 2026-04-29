@@ -8,6 +8,9 @@ en:
       column:
         expand_column: "Expand column"
         showing_recent: "Showing the 100 most recent (%{hidden} are hidden)"
+        added: "Added"
+        updated: "Updated"
+        done: "Done"
       columns:
         show:
           activity: "Activity"

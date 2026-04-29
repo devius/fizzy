@@ -1,7 +1,7 @@
 ka:
   boards:
     access_toggle:
-      give_access: "%{name}-ს წვდომის მიცემა"
+      give_access: "%{name}სთვის წვდომის მიცემა"
 
     columns:
       empty_placeholder:
