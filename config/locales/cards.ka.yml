@@ -52,7 +52,7 @@ ka:
         delete: "წაშლა"
     container:
       closure:
-        completed_by_html: "დაასრულა %{name}-მ %{date}."
+        completed_by_html: "დასრულებულია %{name}-ის მიერ %{date}."
         undo: "გაუქმება"
         auto_move_html: "გადავა „არა ახლა“-ში %{date}, თუ აქტივობა არ იქნება."
       closure_buttons:

@@ -70,7 +70,7 @@ ka:
           unsubscribe_all: "გააუქმეთ ხელმოწერა ყველა ელფოსტის შეტყობინებაზე"
         mention:
           body:
-            mentioned_you: "%{name}-მა მოგიხსენიათ:"
+            mentioned_you: "%{name}-მა მოგნიშნათ:"
   user_mailer:
     email_change_confirmation:
       subject: "დაადასტურეთ თქვენი ახალი ელფოსტის მისამართი"
