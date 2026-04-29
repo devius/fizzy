@@ -8,6 +8,9 @@ ka:
       column:
         expand_column: "სვეტის გაშლა"
         showing_recent: "ნაჩვენებია 100 ბოლო (%{hidden} დამალულია)"
+        added: "დამატებული"
+        updated: "განახლებული"
+        done: "დასრულებული"
       columns:
         show:
           activity: "აქტივობა"
