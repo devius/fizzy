@@ -76,10 +76,14 @@ GitHub Actions (.github/workflows/publish-image.yml)
         ↓
 ghcr.io/devius/fizzy:i18n-georgian   ← public package
         ↓
+deploy job → Coolify webhook (ordunet.ge)
+        ↓
 Coolify pulls, restarts service
 ```
 
 Workflow triggers on pushes to `main` *and* `i18n-georgian` (we added the branch to the trigger list). Manual dispatch: `gh workflow run publish-image.yml --repo devius/fizzy --ref i18n-georgian`.
+
+The final `deploy` job hits `https://coolify.ordunet.ge/api/v1/deploy?uuid=…&force=false` with a bearer token from the `COOLIFY_DEPLOY_TOKEN` GH Actions secret (rotate via `gh secret set COOLIFY_DEPLOY_TOKEN --repo devius/fizzy`). It only runs on the `i18n-georgian` branch.
 
 The Coolify compose for this fork only differs from upstream in the `image:` line:
 
