@@ -207,4 +207,22 @@ jobs:
             cosign sign --yes "$tag"
           done <<< "$tags"
 
+  deploy:
+    name: Trigger Coolify deploy (ordunet.ge)
+    needs: manifest
+    if: github.ref_name == 'i18n-georgian' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Hit Coolify deploy webhook
+        env:
+          COOLIFY_DEPLOY_TOKEN: ${{ secrets.COOLIFY_DEPLOY_TOKEN }}
+          COOLIFY_DEPLOY_UUID: azerkg84md07vqn5b4jzx7aj
+        run: |
+          set -eu
+          curl --fail-with-body --silent --show-error \
+            --request GET \
+            --header "Authorization: Bearer ${COOLIFY_DEPLOY_TOKEN}" \
+            "https://coolify.ordunet.ge/api/v1/deploy?uuid=${COOLIFY_DEPLOY_UUID}&force=false"
+
 
