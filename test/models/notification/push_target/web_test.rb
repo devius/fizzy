@@ -2,6 +2,9 @@ require "test_helper"
 
 class Notification::PushTarget::WebTest < ActiveSupport::TestCase
   setup do
+    @original_locale = I18n.locale
+    I18n.locale = :en
+
     @user = users(:david)
     @notification = notifications(:logo_mentioned_david)
 
@@ -15,6 +18,10 @@ class Notification::PushTarget::WebTest < ActiveSupport::TestCase
 
     @web_push_pool = mock("web_push_pool")
     Rails.configuration.x.stubs(:web_push_pool).returns(@web_push_pool)
+  end
+
+  teardown do
+    I18n.locale = @original_locale
   end
 
   test "pushes to web when user has subscriptions" do
