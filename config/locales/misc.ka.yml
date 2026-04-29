@@ -55,7 +55,7 @@ ka:
       confirm_remove: "ნამდვილად გსურთ ამ ვებჰუკის სამუდამოდ წაშლა?"
       remove: "წაშლა: %{name}"
     edit:
-      name_placeholder: "დაასახელეთ ვებჰუკი…"
+      name_placeholder: "დაარქვით სახელი ვებჰუკს…"
       events: "მოვლენები"
       trigger_payload: "გამოიძახეთ Payload URL როდესაც:"
       save_changes: "ცვლილებების შენახვა"
@@ -72,7 +72,7 @@ ka:
     new:
       page_title: "ვებჰუკის დაყენება"
       webhooks: "ვებჰუკები"
-      name_placeholder: "დაასახელეთ ეს ვებჰუკი…"
+      name_placeholder: "დაარქვით სახელი ვებჰუკს…"
       payload_url: "Payload URL"
       payload_url_help: "ეს არის იმ აპის URL, რომელიც მიიღებს Fizzy-დან payload-ს."
       url_pattern_title: "უნდა იყოს http:// ან https:// URL"
