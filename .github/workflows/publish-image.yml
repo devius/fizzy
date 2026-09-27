@@ -225,7 +225,7 @@ jobs:
         run: |
           set -eu
           curl --fail-with-body --silent --show-error \
-            --request GET \
+            --request POST \
             --header "Authorization: Bearer ${COOLIFY_DEPLOY_TOKEN}" \
             "https://coolify.ordunet.ge/api/v1/deploy?uuid=${COOLIFY_DEPLOY_UUID}&force=false"
 
