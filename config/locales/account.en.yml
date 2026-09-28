@@ -97,3 +97,81 @@ en:
       show:
         page_title: "Account Settings"
         admin_only: "Only admins can change these settings"
+    seeder:
+      cards:
+        orientation:
+          title: "Finally, watch this Fizzy orientation video"
+          body_html: |-
+            <p>There’s a whole lot more you can do in Fizzy. In the video below, 37signals founder and CEO, Jason Fried, will walk you through the basics in just 17 minutes.</p>
+          caption: "Fizzy orientation"
+        passkey:
+          title: "Then, set up a Passkey"
+          body_html: |-
+            <p>Passkeys let you sign in securely without using passwords or email codes. To set one up, open the Fizzy menu and go to “<b><strong>My Profile > Manage Passkeys</b></strong>”. Using a passkey is optional, but recommended.</p>
+          alt: "Demo of adding a passkey"
+          caption: "Create a passkey to sign in without passwords or email codes"
+        invite_link:
+          title: "Now, grab the invite link to invite someone else"
+          body_html: |-
+            <p>Open the Fizzy menu, select “<b><strong>+ Add people</b></strong>”, then copy the invite link. You can give this link to someone else so they can make a login for themselves in your account.</p>
+          alt: "Demo of copying invite link"
+          caption: "Get a link to invite co-workers"
+        home:
+          title: "Then, head back home to check out activity"
+          body_html: |-
+            <p>Hit “1” or pull down the Fizzy menu and select “Home”.</p>
+          alt: "Demo of visiting Home"
+          caption: "Go back to Home for Latest Activity"
+        assigned:
+          title: "Now, check out all cards assigned to you"
+          body_html: |-
+            <p>Pull down the Fizzy menu at the top of the screen, and select “<b><strong>Assigned to me</b></strong>” or just hit “2” on your keyboard any time.</p>
+          alt: "Demo of navigating to 'Assigned to Me'"
+          caption: "See all cards assigned to me"
+        menu:
+          title: "Then, open the Fizzy menu"
+          body_html: |-
+            <p>The Fizzy menu is how you get around the app. Click “<b><strong>Fizzy</b></strong>” at the top of the screen or hit the “J” key on your keyboard to pop it open.</p>
+          alt: "Demo of opening the main menu"
+          caption: "Open the Fizzy menu"
+        assign:
+          title: "Next, assign this card to yourself"
+          body_html: |-
+            <p>Click the little head with the + next to it, then pick yourself.</p>
+          alt: "Demo of assigning a card"
+          caption: "Assign this to yourself"
+        tag:
+          title: "Now, tag this card “Design” then move it to YES"
+          body_html: |-
+            <p>Click the little Tag icon, type “design”, then “<b><strong>Create tag</b></strong>”. Then, move the card to the new “YES” column you created in the previous step.</p>
+          alt: "Demo of tagging a card"
+          caption: "Tag this #design"
+        columns:
+          title: "Next, make two more columns"
+          body_html: |-
+            <ol>
+              <li>Make one called "Yes"</li>
+              <li>Make another called "Working on"</li>
+            </ol>
+            <p>Go back to the Board view, click the little “+” to the right of the DONE column, name the column, pick a color, then do it again.</p>
+            <p><br></p>
+            <p>After that, drag this card to “DONE” or select “DONE” in the sidebar.</p>
+          alt: "Demo of adding columns"
+          caption: "Make two more columns"
+        not_now:
+          title: "Second, move this card to NOT NOW"
+          body_html: |-
+            <p>You can either select “NOT NOW” over in the sidebar, or you can go back out to the board view and drag this card into the “NOT NOW” column on the left side.</p>
+            <p><br></p>
+          alt: "Demo of moving a card to Not Now"
+          caption: "Move to Not Now"
+        rename:
+          title: "First, rename this card"
+          body_html: |-
+            <ol>
+              <li>Click the title and you can rename the card, change the description, or add more information to the card.</li>
+              <li>Then, hit "Mark as Done" at the bottom of the card.</li>
+              <li>Finally, hit “<b><strong>Back to Playground</strong></b>” in the top left of the screen to go back to the board.</li>
+            </ol>
+          alt: "Demo of renaming a card"
+          caption: "Rename this card"
