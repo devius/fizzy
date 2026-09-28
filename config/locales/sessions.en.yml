@@ -12,6 +12,8 @@ en:
       signin_prompt: "Enter your email and we’ll get you signed in."
       lets_go: "Let’s go"
       passkey_sign_in: "Sign in with a passkey"
+      passkey_error: "Something went wrong while signing in with your passkey."
+      passkey_cancelled: "Passkey sign in was cancelled. Try again when you are ready."
     magic_links:
       show:
         page_title: "Check your email"

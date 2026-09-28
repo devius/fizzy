@@ -1,5 +1,21 @@
 en:
   filters:
+    time_windows:
+      today: "Today"
+      yesterday: "Yesterday"
+      thisweek: "This week"
+      thismonth: "This month"
+      thisyear: "This year"
+      lastweek: "Last week"
+      lastmonth: "Last month"
+      lastyear: "Last year"
+    indexes:
+      all: "Open"
+      closed: "Done"
+      not_now: "Not now"
+      stalled: "Stalled"
+      postponing_soon: "Closing soon"
+      golden: "Golden"
     filter_toggle:
       delete_custom_view: "Delete custom view"
       save_custom_view: "Save custom view"

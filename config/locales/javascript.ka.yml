@@ -1,5 +1,7 @@
 ka:
   javascript:
+    turbo_navigation:
+      back_to: "%{label}-ზე დაბრუნება"
     local_time:
       less_than_a_minute_ago: "ერთ წუთზე ნაკლები"
       x_seconds_ago:

@@ -1,5 +1,8 @@
 en:
   notifications:
+    default_payload:
+      title: "New notification"
+      body: "You have a new notification"
     tray:
       settings_title: "Notification Settings"
       settings: "Settings"

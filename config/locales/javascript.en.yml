@@ -1,5 +1,7 @@
 en:
   javascript:
+    turbo_navigation:
+      back_to: "Back to %{label}"
     local_time:
       less_than_a_minute_ago: "Less than a minute ago"
       x_seconds_ago:

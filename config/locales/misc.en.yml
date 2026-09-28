@@ -1,9 +1,4 @@
 en:
-  tags:
-    index:
-      all_tags: "All tags"
-      confirm_delete: "Are you sure?"
-      delete: "Delete"
   columns:
     show:
       add_card_button:

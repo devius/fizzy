@@ -1,18 +1,7 @@
 class TimeWindowParser
   attr_reader :now
 
-  HUMAN_NAMES_BY_VALUE = {
-    "today" => "Today",
-    "yesterday" => "Yesterday",
-    "thisweek" => "This week",
-    "thismonth" => "This month",
-    "thisyear" => "This year",
-    "lastweek" => "Last week",
-    "lastmonth" => "Last month",
-    "lastyear" => "Last year"
-  }
-
-  VALUES = HUMAN_NAMES_BY_VALUE.keys
+  VALUES = %w[ today yesterday thisweek thismonth thisyear lastweek lastmonth lastyear ]
 
   class << self
     def parse(string)
@@ -20,7 +9,7 @@ class TimeWindowParser
     end
 
     def human_name_for(value)
-      HUMAN_NAMES_BY_VALUE[value]
+      I18n.t("filters.time_windows.#{value}") if value.in?(VALUES)
     end
   end
 

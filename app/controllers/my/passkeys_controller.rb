@@ -13,9 +13,9 @@ class My::PasskeysController < ApplicationController
 
     redirect_to edit_my_passkey_path(passkey, created: true)
   rescue ActiveRecord::RecordNotUnique
-    redirect_to my_passkeys_path, alert: "That passkey is already registered."
+    redirect_to my_passkeys_path, alert: I18n.t("flashes.passkey_already_registered")
   rescue ActionPack::WebAuthn::Error
-    redirect_to my_passkeys_path, alert: "We couldn't register that passkey. Please try again."
+    redirect_to my_passkeys_path, alert: I18n.t("flashes.passkey_registration_failed")
   end
 
   def edit

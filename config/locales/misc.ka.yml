@@ -1,9 +1,4 @@
 ka:
-  tags:
-    index:
-      all_tags: "ყველა ტეგი"
-      confirm_delete: "დარწმუნებული ხართ?"
-      delete: "წაშლა"
   columns:
     show:
       add_card_button:

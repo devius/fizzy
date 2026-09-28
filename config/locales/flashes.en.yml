@@ -21,3 +21,5 @@ en:
     email_invalid: "Please enter a valid email address"
     email_already_yours: "That is already your email address"
     email_already_in_account: "You already have a user in this account with that email address"
+    passkey_already_registered: "That passkey is already registered."
+    passkey_registration_failed: "We couldn't register that passkey. Please try again."

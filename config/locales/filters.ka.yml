@@ -1,5 +1,21 @@
 ka:
   filters:
+    time_windows:
+      today: "დღეს"
+      yesterday: "გუშინ"
+      thisweek: "ამ კვირაში"
+      thismonth: "ამ თვეში"
+      thisyear: "წელს"
+      lastweek: "გასულ კვირაში"
+      lastmonth: "გასულ თვეში"
+      lastyear: "შარშან"
+    indexes:
+      all: "ღია"
+      closed: "დასრულებული"
+      not_now: "არა ახლა"
+      stalled: "გაჭედილი"
+      postponing_soon: "მალე დაიხურება"
+      golden: "ოქროს"
     filter_toggle:
       delete_custom_view: "მორგებული ხედის წაშლა"
       save_custom_view: "მორგებული ხედის შენახვა"

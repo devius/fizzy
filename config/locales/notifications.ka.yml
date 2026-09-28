@@ -1,5 +1,8 @@
 ka:
   notifications:
+    default_payload:
+      title: "ახალი შეტყობინება"
+      body: "ახალი შეტყობინება გაქვთ"
     tray:
       settings_title: "შეტყობინებების პარამეტრები"
       settings: "პარამეტრები"

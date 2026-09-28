@@ -12,11 +12,11 @@ class Notification::DefaultPayload
   end
 
   def title
-    "New notification"
+    I18n.t("notifications.default_payload.title")
   end
 
   def body
-    "You have a new notification"
+    I18n.t("notifications.default_payload.body")
   end
 
   def url

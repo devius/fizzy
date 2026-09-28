@@ -12,6 +12,8 @@ ka:
       signin_prompt: "შეიყვანეთ ელფოსტა და დაგეხმარებით შესვლაში."
       lets_go: "წავედით"
       passkey_sign_in: "Passkey-ით შესვლა"
+      passkey_error: "Passkey-ით შესვლისას შეცდომა მოხდა."
+      passkey_cancelled: "Passkey-ით შესვლა გაუქმდა. სცადეთ თავიდან, როცა მზად იქნებით."
     magic_links:
       show:
         page_title: "შეამოწმეთ ელფოსტა"

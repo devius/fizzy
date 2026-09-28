@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { t } from "lib/i18n"
 
 export default class extends Controller {
   static values = { label: String }
@@ -31,7 +32,7 @@ export default class extends Controller {
 
     link.href = this.#referrerUrl
     const strong = link.querySelector("strong")
-    if (strong) { strong.textContent = `Back to ${this.#referrerLabel}` }
+    if (strong) { strong.textContent = t("turbo_navigation.back_to", { label: this.#referrerLabel }) }
   }
 
   get #referrerPath() {

@@ -21,3 +21,5 @@ ka:
     email_invalid: "გთხოვთ შეიყვანოთ ვალიდური ელფოსტა"
     email_already_yours: "ეს უკვე თქვენი ელფოსტაა"
     email_already_in_account: "ამ ანგარიშში უკვე გყავთ მომხმარებელი ამ ელფოსტით"
+    passkey_already_registered: "Passkey უკვე დარეგისტრირებულია."
+    passkey_registration_failed: "Passkey-ის რეგისტრაცია ვერ მოხერხდა. გთხოვთ, სცადოთ თავიდან."
