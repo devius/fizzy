@@ -33,7 +33,7 @@ ka:
       body:
         assigned: "თქვენ მოგენიჭათ %{creator}-ის მიერ"
         added: "დამატებულია %{creator}-ის მიერ"
-        moved_to_done: "გადატანილია „დასრულდა“-ში %{creator}-ის მიერ"
+        moved_to_done: "გადატანილია „დასრულებული“-ში %{creator}-ის მიერ"
         closed: "დახურულია %{creator}-ის მიერ"
         reopened: "ხელახლა გახსნილია %{creator}-ის მიერ"
         moved_to_column: "გადატანილია %{column}-ში %{creator}-ის მიერ"

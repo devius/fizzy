@@ -4,7 +4,7 @@ ka:
       columns:
         closeds:
           show:
-            page_title: "სვეტი: შესრულებული"
+            page_title: "სვეტი: დასრულებული"
             no_cards_here: "ბარათები არ არის"
         not_nows:
           show:
@@ -19,7 +19,7 @@ ka:
             no_cards_here: "ბარათები არ არის"
       show:
         closed:
-          done: "შესრულებული"
+          done: "დასრულებული"
           maximize_column: "სვეტის გაშლა"
         column:
           maximize_column: "სვეტის გაშლა"

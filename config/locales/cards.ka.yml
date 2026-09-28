@@ -30,7 +30,7 @@ ka:
         legend: "აირჩიეთ სვეტი ამ ბარათისთვის"
         not_now: "ახლა არა"
         maybe: "იქნებ?"
-        done: "დასრულდა"
+        done: "დასრულებული"
     comments:
       comment:
         full_history: "სრული ისტორია"
@@ -93,7 +93,7 @@ ka:
           not_assigned: "დაუნიშნავი"
         stamp:
           not_now: "ახლა არა"
-          done: "დასრულდა"
+          done: "დასრულებული"
           by: "ავტორი:"
       perma:
         background:
