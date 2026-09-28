@@ -15,7 +15,7 @@ class Notification::BundleMailer < ApplicationMailer
       account_suffix = @user.identity.accounts.many? ? " (#{ Current.account.name })" : ""
       mail \
         to: bundle.user.identity.email_address,
-        subject: I18n.t("mailers.notification.bundle_mailer.notification.subject", account_suffix: account_suffix)
+        subject: I18n.t("notification.bundle_mailer.notification.subject", account_suffix: account_suffix)
     end
   end
 end

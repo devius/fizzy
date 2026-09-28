@@ -5,7 +5,7 @@ class ExportMailer < ApplicationMailer
     @export = export
     @user = export.user
 
-    mail to: @user.identity.email_address, subject: I18n.t("mailers.export_mailer.completed.subject")
+    mail to: @user.identity.email_address, subject: I18n.t("export_mailer.completed.subject")
   end
 
   private
