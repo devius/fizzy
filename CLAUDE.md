@@ -36,7 +36,7 @@ config/locales/
 | ERB views | Lazy lookup `t(".key")` | In `app/views/boards/show.html.erb` → resolves `boards.show.key` |
 | Helpers | Full path `I18n.t("...")` | `I18n.t("helpers.cards.added_by", name: ...)` |
 | Controllers (flash messages) | Full path | `notice: I18n.t("flashes.saved")` |
-| Mailers | Lazy in views, full path in subjects | `mail(subject: I18n.t("mailers.user_mailer.x.subject"))` |
+| Mailers | Lazy in views, full path in subjects | `mail(subject: I18n.t("magic_link_mailer.sign_in_instructions.subject"))` — no `mailers.` prefix: `ApplicationMailer` appends `app/views/mailers` to the view paths, so `app/views/mailers/foo_mailer/bar.html.erb` looks up `foo_mailer.bar.key` |
 | JS (Stimulus) | `import { t } from "lib/i18n"` | `t("local_time.x_days_ago.other", { count })` |
 
 ### JS i18n plumbing
@@ -48,6 +48,10 @@ JavaScript can't reach Rails `I18n` directly, so:
 - `app/javascript/lib/i18n.js` reads that JSON and exposes `t(key, vars)` with `%{var}` interpolation.
 - New JS-side strings → add under `javascript:` namespace in `javascript.en.yml` + `javascript.ka.yml` and `import { t } from "lib/i18n"` in the controller.
 - Pluralization uses `.one`/`.other` keys; pass `{ count: n }` and pick the form in the controller (`count === 1 ? "one" : "other"`). Georgian doesn't really inflect plurals on time-units, so both forms are usually identical text.
+
+### Tests
+
+The test environment defaults to `:en` (`config/environments/test.rb`) so upstream's English assertions keep passing. Keep `test/` identical to upstream — don't localize assertions.
 
 ### What NOT to translate
 
@@ -83,7 +87,7 @@ Coolify pulls, restarts service
 
 Workflow triggers on pushes to `main` *and* `i18n-georgian` (we added the branch to the trigger list). Manual dispatch: `gh workflow run publish-image.yml --repo devius/fizzy --ref i18n-georgian`.
 
-The final `deploy` job hits `https://coolify.ordunet.ge/api/v1/deploy?uuid=…&force=false` with a bearer token from the `COOLIFY_DEPLOY_TOKEN` GH Actions secret (rotate via `gh secret set COOLIFY_DEPLOY_TOKEN --repo devius/fizzy`). It only runs on the `i18n-georgian` branch.
+The final `deploy` job POSTs to `https://coolify.ordunet.ge/api/v1/deploy?uuid=…&force=false` (Coolify rejects GET with 405) with a bearer token from the `COOLIFY_DEPLOY_TOKEN` GH Actions secret (rotate via `gh secret set COOLIFY_DEPLOY_TOKEN --repo devius/fizzy`). It only runs on the `i18n-georgian` branch.
 
 The Coolify compose for this fork only differs from upstream in the `image:` line:
 
