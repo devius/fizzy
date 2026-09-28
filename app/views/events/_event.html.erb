@@ -1,5 +1,6 @@
 <% cache event do %>
   <%# Template Dependency Updated: _layout.html.erb 2026-01-26 %>
+  <%# Model Dependency Updated: Event::Description localized 2026-09-28 %>
   <% if lookup_context.exists?("events/event/eventable/_#{event.action}") %>
     <%= render "events/event/eventable/#{event.action}", event: event %>
   <% else %>

@@ -1,5 +1,20 @@
 ka:
   filters:
+    summary:
+      indexes:
+        closed: "დასრულებული"
+        not_now: "ახლა არა"
+        stalled: "გაჭედილი"
+        postponing_soon: "მალე დაიხურება"
+        golden: "ოქროს"
+      sorts:
+        newest: "ახლიდან ძველისკენ"
+        oldest: "ძველიდან ახლისკენ"
+      assigned_to: "მინიჭებული %{names}-ზე"
+      assigned_to_no_one: "არავისზე მინიჭებული"
+      added_by: "დამატებული %{names}-ის მიერ"
+      matching: "შეიცავს %{terms}"
+      quoted_term: "„%{term}“"
     time_windows:
       today: "დღეს"
       yesterday: "გუშინ"

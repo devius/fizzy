@@ -17,26 +17,30 @@ class Card::Eventable::SystemCommenter
     def comment_body
       case event.action
       when "card_assigned"
-        "#{creator_name} <strong>assigned</strong> this to #{assignee_names}."
+        body_for :assigned, creator: creator_name, names: assignee_names
       when "card_unassigned"
-        "#{creator_name} <strong>unassigned</strong> from #{assignee_names}."
+        body_for :unassigned, creator: creator_name, names: assignee_names
       when "card_closed"
-        "<strong>Moved</strong> to “Done” by #{creator_name}"
+        body_for :closed, creator: creator_name
       when "card_reopened"
-        "<strong>Reopened</strong> by #{creator_name}"
+        body_for :reopened, creator: creator_name
       when "card_postponed"
-        "#{creator_name} <strong>moved</strong> this to “Not Now”"
+        body_for :postponed, creator: creator_name
       when "card_auto_postponed"
-        "<strong>Moved</strong> to “Not Now” due to inactivity"
+        body_for :auto_postponed
       when "card_title_changed"
-        "#{creator_name} <strong>changed the title</strong> from “#{old_title}” to “#{new_title}”."
+        body_for :title_changed, creator: creator_name, old_title: old_title, new_title: new_title
       when "card_board_changed"
-        "#{creator_name} <strong>moved</strong> this from “#{old_board}” to “#{new_board}”."
+        body_for :board_changed, creator: creator_name, old_board: old_board, new_board: new_board
       when "card_triaged"
-        "#{creator_name} <strong>moved</strong> this to “#{column}”"
+        body_for :triaged, creator: creator_name, column: column
       when "card_sent_back_to_triage"
-        "#{creator_name} <strong>moved</strong> this back to “Maybe?”"
+        body_for :sent_back_to_triage, creator: creator_name
       end
+    end
+
+    def body_for(key, **values)
+      I18n.t("events.system_comments.#{key}_html", **values)
     end
 
     def creator_name

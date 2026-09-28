@@ -4,7 +4,7 @@ class Account::JoinCode < ApplicationRecord
 
   belongs_to :account
 
-  validates :usage_limit, numericality: { less_than_or_equal_to: USAGE_LIMIT_MAX, message: "cannot be larger than the population of the planet" }
+  validates :usage_limit, numericality: { less_than_or_equal_to: USAGE_LIMIT_MAX, message: ->(*) { I18n.t("errors.messages.usage_limit_too_large") } }
 
   scope :active, -> { where("usage_count < usage_limit") }
 

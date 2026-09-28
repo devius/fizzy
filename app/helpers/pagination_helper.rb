@@ -100,6 +100,6 @@ module PaginationHelper
     end
 
     def default_pagination_label(activate_when_observed)
-      "Load more…"
+      I18n.t("helpers.pagination.load_more")
     end
 end

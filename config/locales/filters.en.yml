@@ -1,5 +1,20 @@
 en:
   filters:
+    summary:
+      indexes:
+        closed: "Closed"
+        not_now: "Not now"
+        stalled: "Stalled"
+        postponing_soon: "Postponing soon"
+        golden: "Golden"
+      sorts:
+        newest: "Newest"
+        oldest: "Oldest"
+      assigned_to: "assigned to %{names}"
+      assigned_to_no_one: "assigned to no one"
+      added_by: "added by %{names}"
+      matching: "matching %{terms}"
+      quoted_term: "\"%{term}\""
     time_windows:
       today: "Today"
       yesterday: "Yesterday"

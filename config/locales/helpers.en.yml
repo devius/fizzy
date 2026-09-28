@@ -1,5 +1,8 @@
 en:
   helpers:
+    comments:
+      first_comment_placeholder: "Next, add some notes, context, pictures, or video about this…"
+      placeholder: "Type your comment…"
     pagination:
       load_more: "Load more…"
     application:

@@ -28,8 +28,8 @@ class Event::Description
 
     def creator_tag
       tag.span data: { creator_id: event.creator.id } do
-        tag.span("You", data: { only_visible_to_you: true }) +
-        tag.span(event.creator.name, data: { only_visible_to_others: true })
+        tag.span(I18n.t("events.description.you"), data: { only_visible_to_you: true }) +
+        tag.span(I18n.t("events.description.creator", name: event.creator.name), data: { only_visible_to_others: true })
       end
     end
 
@@ -38,11 +38,11 @@ class Event::Description
     end
 
     def creator_name
-      h event.creator.name
+      h I18n.t("events.description.creator", name: event.creator.name)
     end
 
     def quoted(text)
-      h %("#{text}")
+      h I18n.t("events.description.quoted", text: text)
     end
 
     def card
@@ -50,7 +50,7 @@ class Event::Description
     end
 
     def comment_sentence(creator, card_title)
-      "#{creator} commented on #{card_title}"
+      sentence(:commented, creator, card_title)
     end
 
     def action_sentence(creator, card_title)
@@ -60,17 +60,17 @@ class Event::Description
       when "card_unassigned"
         unassigned_sentence(creator, card_title)
       when "card_published"
-        "#{creator} added #{card_title}"
+        sentence(:published, creator, card_title)
       when "card_closed"
-        %(#{creator} moved #{card_title} to "Done")
+        sentence(:closed, creator, card_title)
       when "card_reopened"
-        "#{creator} reopened #{card_title}"
+        sentence(:reopened, creator, card_title)
       when "card_postponed"
-        %(#{creator} moved #{card_title} to "Not Now")
+        sentence(:postponed, creator, card_title)
       when "card_auto_postponed"
-        %(#{card_title} moved to "Not Now" due to inactivity)
+        sentence(:auto_postponed, creator, card_title)
       when "card_resumed"
-        "#{creator} resumed #{card_title}"
+        sentence(:resumed, creator, card_title)
       when "card_title_changed"
         renamed_sentence(creator, card_title)
       when "card_board_changed", "card_collection_changed"
@@ -78,32 +78,36 @@ class Event::Description
       when "card_triaged"
         triaged_sentence(creator, card_title)
       when "card_sent_back_to_triage"
-        %(#{creator} moved #{card_title} back to "Maybe?")
+        sentence(:sent_back_to_triage, creator, card_title)
       end
+    end
+
+    def sentence(key, creator, card_title, **values)
+      I18n.t("events.description.#{key}", creator: creator, card: card_title, **values)
     end
 
     def assigned_sentence(creator, card_title)
       if event.assignees.include?(user)
-        "#{creator} will handle #{card_title}"
+        sentence(:will_handle, creator, card_title)
       else
-        "#{creator} assigned #{assignee_names} to #{card_title}"
+        sentence(:assigned, creator, card_title, names: assignee_names)
       end
     end
 
     def unassigned_sentence(creator, card_title)
-      "#{creator} unassigned #{unassigned_names} from #{card_title}"
+      sentence(:unassigned, creator, card_title, names: unassigned_names)
     end
 
     def renamed_sentence(creator, card_title)
-      %(#{creator} renamed #{card_title} (was: "#{old_title}"))
+      sentence(:renamed, creator, card_title, old_title: old_title)
     end
 
     def moved_sentence(creator, card_title)
-      %(#{creator} moved #{card_title} to "#{new_location}")
+      sentence(:moved, creator, card_title, location: new_location)
     end
 
     def triaged_sentence(creator, card_title)
-      %(#{creator} moved #{card_title} to "#{column}")
+      sentence(:triaged, creator, card_title, column: column)
     end
 
     def assignee_names
@@ -111,7 +115,7 @@ class Event::Description
     end
 
     def unassigned_names
-      h(event.assignees.include?(user) ? "yourself" : assignee_names)
+      h(event.assignees.include?(user) ? I18n.t("events.description.yourself") : assignee_names)
     end
 
     def old_title

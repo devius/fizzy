@@ -6,13 +6,13 @@ module Filter::Summarized
   private
     def index_summary
       unless indexed_by.all?
-        indexed_by.humanize
+        I18n.t("filters.summary.indexes.#{indexed_by}", default: indexed_by.humanize)
       end
     end
 
     def sort_summary
       unless sorted_by.latest?
-        sorted_by.humanize
+        I18n.t("filters.summary.sorts.#{sorted_by}", default: sorted_by.humanize)
       end
     end
 
@@ -24,21 +24,21 @@ module Filter::Summarized
 
     def assignee_summary
       if assignees.any?
-        "assigned to #{assignees.pluck(:name).to_choice_sentence}"
+        I18n.t("filters.summary.assigned_to", names: assignees.pluck(:name).to_choice_sentence)
       elsif assignment_status.unassigned?
-        "assigned to no one"
+        I18n.t("filters.summary.assigned_to_no_one")
       end
     end
 
     def terms_summary
       if terms.any?
-        "matching #{terms.map { |term| %Q("#{term}") }.to_sentence}"
+        I18n.t("filters.summary.matching", terms: terms.map { |term| I18n.t("filters.summary.quoted_term", term: term) }.to_sentence)
       end
     end
 
     def creator_summary
       if creators.any?
-        "added by #{creators.pluck(:name).to_choice_sentence}"
+        I18n.t("filters.summary.added_by", names: creators.pluck(:name).to_choice_sentence)
       end
     end
 end

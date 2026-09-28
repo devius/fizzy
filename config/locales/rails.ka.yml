@@ -1,0 +1,81 @@
+# Georgian for Rails' own strings (English ships with Rails): list connectors,
+# validation errors, attribute names in error messages, and file sizes.
+ka:
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " და "
+      last_word_connector: " და "
+    choice_array:
+      two_words_connector: " ან "
+      last_word_connector: " ან "
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      usage_limit_too_large: "არ შეიძლება აღემატებოდეს პლანეტის მოსახლეობას"
+      account_creation_failed: "რაღაც შეცდომა მოხდა და ანგარიშის შექმნა ვერ მოხერხდა. გთხოვთ, სცადოთ თავიდან."
+      accepted: "უნდა იყოს მიღებული"
+      blank: "არ შეიძლება იყოს ცარიელი"
+      confirmation: "არ ემთხვევა %{attribute}-ს"
+      empty: "არ შეიძლება იყოს ცარიელი"
+      equal_to: "უნდა იყოს %{count}-ის ტოლი"
+      even: "უნდა იყოს ლუწი"
+      exclusion: "დაკავებულია"
+      greater_than: "უნდა იყოს %{count}-ზე მეტი"
+      greater_than_or_equal_to: "უნდა იყოს %{count}-ზე მეტი ან ტოლი"
+      in: "უნდა იყოს %{count}-ის ფარგლებში"
+      inclusion: "არ შედის სიაში"
+      invalid: "არასწორია"
+      less_than: "უნდა იყოს %{count}-ზე ნაკლები"
+      less_than_or_equal_to: "უნდა იყოს %{count}-ზე ნაკლები ან ტოლი"
+      model_invalid: "ვალიდაცია ვერ გაიარა: %{errors}"
+      not_a_number: "არ არის რიცხვი"
+      not_an_integer: "უნდა იყოს მთელი რიცხვი"
+      odd: "უნდა იყოს კენტი"
+      other_than: "არ უნდა იყოს %{count}-ის ტოლი"
+      present: "უნდა იყოს ცარიელი"
+      required: "აუცილებელია"
+      taken: "უკვე დაკავებულია"
+      too_long:
+        one: "ძალიან გრძელია (მაქსიმუმ 1 სიმბოლო)"
+        other: "ძალიან გრძელია (მაქსიმუმ %{count} სიმბოლო)"
+      too_short:
+        one: "ძალიან მოკლეა (მინიმუმ 1 სიმბოლო)"
+        other: "ძალიან მოკლეა (მინიმუმ %{count} სიმბოლო)"
+      wrong_length:
+        one: "არასწორი სიგრძეა (უნდა იყოს 1 სიმბოლო)"
+        other: "არასწორი სიგრძეა (უნდა იყოს %{count} სიმბოლო)"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "ვალიდაცია ვერ გაიარა: %{errors}"
+    attributes:
+      user:
+        name: "სახელი"
+      identity:
+        email_address: "ელფოსტის მისამართი"
+      account/join_code:
+        usage_limit: "გამოყენების ლიმიტი"
+  activemodel:
+    attributes:
+      signup:
+        full_name: "სრული სახელი"
+        email_address: "ელფოსტის მისამართი"
+        identity: "ანგარიში"
+  number:
+    format:
+      separator: ","
+      delimiter: " "
+    human:
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "ბაიტი"
+            other: "ბაიტი"
+          kb: "კბ"
+          mb: "მბ"
+          gb: "გბ"
+          tb: "ტბ"
+          pb: "პბ"
+          eb: "ებ"

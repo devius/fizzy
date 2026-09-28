@@ -1,0 +1,9 @@
+en:
+  support:
+    choice_array:
+      two_words_connector: " or "
+      last_word_connector: ", or "
+  errors:
+    messages:
+      usage_limit_too_large: "cannot be larger than the population of the planet"
+      account_creation_failed: "Something went wrong, and we couldn't create your account. Please give it another try."

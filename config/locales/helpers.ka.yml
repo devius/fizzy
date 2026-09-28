@@ -1,5 +1,8 @@
 ka:
   helpers:
+    comments:
+      first_comment_placeholder: "შემდეგ, დაამატეთ შენიშვნები, კონტექსტი, სურათები ან ვიდეო…"
+      placeholder: "დაწერეთ კომენტარი…"
     pagination:
       load_more: "მეტის ჩატვირთვა…"
     application:
