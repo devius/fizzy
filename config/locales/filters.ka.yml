@@ -12,7 +12,7 @@ ka:
     indexes:
       all: "ღია"
       closed: "დასრულებული"
-      not_now: "არა ახლა"
+      not_now: "ახლა არა"
       stalled: "გაჭედილი"
       postponing_soon: "მალე დაიხურება"
       golden: "ოქროს"

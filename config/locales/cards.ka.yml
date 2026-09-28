@@ -28,7 +28,7 @@ ka:
     columns:
       edit:
         legend: "აირჩიეთ სვეტი ამ ბარათისთვის"
-        not_now: "არა ახლა"
+        not_now: "ახლა არა"
         maybe: "იქნებ?"
         done: "დასრულდა"
     comments:
@@ -54,7 +54,7 @@ ka:
       closure:
         completed_by_html: "დასრულებულია %{name}-ის მიერ %{date}."
         undo: "გაუქმება"
-        auto_move_html: "გადავა „არა ახლა“-ში %{date}, თუ აქტივობა არ იქნება."
+        auto_move_html: "გადავა „ახლა არა“-ში %{date}, თუ აქტივობა არ იქნება."
       closure_buttons:
         edit: "რედაქტირება"
         mark_done: "მონიშნე როგორც დასრულებული"
@@ -92,7 +92,7 @@ ka:
           assigned_to: "დანიშნულია"
           not_assigned: "დაუნიშნავი"
         stamp:
-          not_now: "არა ახლა"
+          not_now: "ახლა არა"
           done: "დასრულდა"
           by: "ავტორი:"
       perma:
