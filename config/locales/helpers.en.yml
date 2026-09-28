@@ -1,5 +1,7 @@
 en:
   helpers:
+    pagination:
+      load_more: "Load more…"
     application:
       back_to: "Back to %{label}"
     my:

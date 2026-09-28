@@ -1,5 +1,7 @@
 ka:
   helpers:
+    pagination:
+      load_more: "მეტის ჩატვირთვა…"
     application:
       back_to: "%{label}-ზე დაბრუნება"
     my:
@@ -18,7 +20,7 @@ ka:
     bridge:
       go_to: "%{name}-ზე გადასვლა"
       share: "გაზიარება"
-      card_share_description: "დამატებულია %{added}-ს %{author}-ის მიერ და %{assignment_state}. განახლდა %{updated}"
+      card_share_description: "დამატებულია %{added} %{author}-ის მიერ და %{assignment_state}. განახლდა %{updated}"
       assigned_to: "მინიჭებული %{names}-ზე"
       not_assigned: "არ არის მინიჭებული"
       board_share_description: "%{open} ღია ბარათი, %{in_stream} ქვეშ MAYBE?"

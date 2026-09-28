@@ -24,8 +24,8 @@ module BridgeHelper
   end
 
   def bridge_share_card_description(card)
-    date_added = card.created_at.strftime("%b %e")
-    date_updated = card.last_active_at.strftime("%b %e")
+    date_added = I18n.l(card.created_at, format: :month_day)
+    date_updated = I18n.l(card.last_active_at, format: :month_day)
     author = card.creator.familiar_name
     assignment_state = card.assignees.any? ?
       I18n.t("helpers.bridge.assigned_to", names: card.assignees.map { |assignee| h assignee.familiar_name }.to_sentence) :

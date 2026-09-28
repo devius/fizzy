@@ -1,6 +1,6 @@
 <tr>
   <td>
-    <h1 class="title"><%= t(".title", time: @bundle.starts_at.strftime("%-l%P on %A, %B %-d")) %></h1>
+    <h1 class="title"><%= t(".title", time: l(@bundle.starts_at, format: :notification_bundle)) %></h1>
     <p class="subtitle margin-block-end-double">
       <%= t(".you_have_html", count: @notifications.count, link: link_to(t(".new_notifications", count: @notifications.count), notifications_url)) %><%= " #{ t('.in_account', name: Current.account.name) }" if @user.identity.accounts.many? %>.
     </p>

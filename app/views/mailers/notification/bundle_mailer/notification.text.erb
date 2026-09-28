@@ -1,4 +1,4 @@
-<%= t(".title", time: @bundle.starts_at.strftime("%-l%P on %A, %B %-d")) %>
+<%= t(".title", time: l(@bundle.starts_at, format: :notification_bundle)) %>
 <%= t(".you_have", count: @notifications.count) %><%= " #{ t('.in_account', name: Current.account.name) }" if @user.identity.accounts.many? %>.
 
 <% @notifications.group_by { |n| n.card.board }.sort_by { |board, _| board.name.downcase }.each do |board, board_notifications| %>

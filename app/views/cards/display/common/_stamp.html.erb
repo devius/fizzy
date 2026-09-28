@@ -3,10 +3,10 @@
     controller: "bridge--stamp",
     bridge__stamp_scope_selector_value: ".card-perma",
     bridge_title: t(".not_now"),
-    bridge_description: card.postponed_at.strftime("%b %d, %Y")
+    bridge_description: l(card.postponed_at, format: :card_stamp)
   } do %>
     <span class="card__closed-title" data-text="<%= t(".not_now") %>"><%= t(".not_now") %></span>
-    <strong class="card__closed-date"><%= card.postponed_at.strftime("%b %d, %Y") %></strong>
+    <strong class="card__closed-date"><%= l(card.postponed_at, format: :card_stamp) %></strong>
     <span class="card__closed-by-line"><%= t(".by") %> <span class="card__closed-by"><%= card.postponed_by&.familiar_name %></span></span>
   <% end %>
 <% end %>
@@ -16,10 +16,10 @@
     controller: "bridge--stamp",
     bridge__stamp_scope_selector_value: ".card-perma",
     bridge_title: t(".done"),
-    bridge_description: card.closed_at.strftime("%b %d, %Y")
+    bridge_description: l(card.closed_at, format: :card_stamp)
   } do %>
     <span class="card__closed-title" data-text="<%= t(".done") %>"><%= t(".done") %></span>
-    <strong class="card__closed-date"><%= card.closed_at.strftime("%b %d, %Y") %></strong>
+    <strong class="card__closed-date"><%= l(card.closed_at, format: :card_stamp) %></strong>
     <span class="card__closed-by-line"><%= t(".by") %> <span class="card__closed-by"><%= card.closed_by.familiar_name %></span></span>
   <% end %>
 <% end %>

@@ -1,0 +1,6 @@
+en:
+  time:
+    formats:
+      card_stamp: "%b %d, %Y"
+      month_day: "%b %e"
+      notification_bundle: "%-l%P on %A, %B %-d"
