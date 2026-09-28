@@ -21,67 +21,6 @@ ka:
         and: "და"
 
   my:
-    access_tokens:
-      permissions:
-        read: "წაკითხვა"
-        write: "წაკითხვა + ჩაწერა"
-      access_token:
-        revoke_confirm: "დარწმუნებული ხართ, რომ გსურთ წვდომის ტოკენის სამუდამოდ გაუქმება?"
-        revoke: "ტოკენის გაუქმება"
-      index:
-        page_title: "პერსონალური წვდომის ტოკენები"
-        my_profile: "ჩემი პროფილი"
-        menu: "მენიუ"
-        intro: "თქვენ მიერ შექმნილი ტოკენები, რომლებითაც შეგიძლიათ Fizzy-ის API-ზე წვდომა."
-        description: "აღწერა"
-        permission: "უფლება"
-        created: "შექმნილია"
-        empty: "პერსონალური წვდომის ტოკენი Fizzy-ის დეველოპერის API-ზე წვდომისთვის პაროლის მსგავსად გამოიყენება. შეგიძლიათ შექმნათ იმდენი ტოკენი, რამდენიც გჭირდებათ, და ნებისმიერ დროს გააუქმოთ თითოეულის წვდომა."
-        generate_new: "ახალი წვდომის ტოკენის შექმნა"
-      new:
-        page_title: "პერსონალური წვდომის ტოკენის შექმნა"
-        back: "ტოკენები"
-        description_label: "წვდომის ტოკენის აღწერა"
-        description_placeholder: "მაგ. GitHub"
-        permission_label: "უფლება"
-        submit: "წვდომის ტოკენის შექმნა"
-        cancel: "გაუქმება და უკან დაბრუნება"
-      show:
-        page_title: "ახალი პერსონალური წვდომის ტოკენი"
-        back: "ტოკენები"
-        save_warning: "შეინახეთ წვდომის ტოკენი ახლავე — ხელახლა ვეღარ ნახავთ."
-        copy: "წვდომის ტოკენის კოპირება"
-    passkeys:
-      passkey:
-        default_name: "Passkey"
-      index:
-        page_title: "Passkey-ები"
-        my_profile: "ჩემი პროფილი"
-        menu: "მენიუ"
-        intro: "Passkey-ით უსაფრთხოდ შეხვალთ პაროლისა და ელფოსტის კოდის გარეშე."
-        register: "Passkey-ის რეგისტრაცია"
-        browser_prompt: "ბრაუზერი შემოგთავაზებთ Passkey-ის შექმნას მოწყობილობის ბიომეტრიით, PIN-კოდით ან უსაფრთხოების გასაღებით"
-        error: "Passkey-ის რეგისტრაციისას შეცდომა მოხდა."
-        cancelled: "Passkey-ის რეგისტრაცია გაუქმდა. სცადეთ თავიდან, როცა მზად იქნებით."
-        duplicate: "ამ მოწყობილობაზე Passkey უკვე დარეგისტრირებულია. ჯერ წაშალეთ არსებული და სცადეთ თავიდან."
-      edit:
-        page_title: "Passkey-ის რედაქტირება"
-        back: "Passkey-ები"
-        registered: "თქვენი Passkey დარეგისტრირდა. დაარქვით სახელი, რომ მოგვიანებით ამოიცნოთ."
-        name_label: "დაარქვით Passkey-ს სახელი"
-        name_placeholder: "მაგ. MacBook Pro, iPhone"
-        save: "შენახვა"
-        remove_confirm: "დარწმუნებული ხართ, რომ გსურთ Passkey-ის წაშლა?"
-        remove: "Passkey-ის წაშლა"
-    pins:
-      pin:
-        unpin: "ბარათის მოხსნა"
-      tray:
-        toggle: "მიმაგრებული ბარათების გადართვა"
-        pinned: "მიმაგრებული"
-      index:
-        page_title: "მიმაგრებული"
-        home: "მთავარი"
     menus:
       jump:
         close: "მენიუს დახურვა"
