@@ -34,7 +34,7 @@ class My::PasskeysControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to my_passkeys_path
-    assert_equal I18n.t("flashes.passkey_registration_failed"), flash[:alert]
+    assert_equal "We couldn't register that passkey. Please try again.", flash[:alert]
   end
 
   test "re-registering an existing credential is rejected with a friendly message" do
@@ -50,6 +50,6 @@ class My::PasskeysControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to my_passkeys_path
-    assert_equal I18n.t("flashes.passkey_already_registered"), flash[:alert]
+    assert_equal "That passkey is already registered.", flash[:alert]
   end
 end
