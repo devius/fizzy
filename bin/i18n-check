@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+# Checks the en/ka locale files without booting Rails:
+# - every en key has a ka counterpart (ka may have extra keys, e.g. Rails built-ins)
+# - every lazy t(".key") in app/views resolves in both locales
+# - every literal full-path t("a.b") / I18n.t("a.b") in app/ resolves in both locales
+# - no duplicate keys in a YAML file (a later duplicate silently replaces the earlier one)
+# Exits non-zero on any problem.
+require "yaml"
+
+Dir.chdir File.expand_path("..", __dir__)
+
+PLURAL_KEYS = %w[ zero one two few many other ]
+
+def flatten(hash, prefix = nil, out = {})
+  hash.each do |key, value|
+    path = [ prefix, key ].compact.join(".")
+    if value.is_a?(Hash) && !(value.keys - PLURAL_KEYS).empty?
+      flatten(value, path, out)
+    else
+      out[path] = value
+    end
+  end
+  out
+end
+
+def duplicate_keys(file)
+  stack, seen, duplicates = [], {}, []
+  File.readlines(file).each_with_index do |line, index|
+    next unless line =~ /\A( *)([\w\/-]+):/
+    indent, key = $1.size, $2
+    stack.pop while stack.any? && stack.last[0] >= indent
+    path = (stack.map(&:last) + [ key ]).join(".")
+    duplicates << "#{file}:#{index + 1} #{path}" if seen[path]
+    seen[path] ||= true
+    stack << [ indent, key ]
+  end
+  duplicates
+end
+
+locales = Hash.new { |hash, key| hash[key] = {} }
+Dir["config/locales/*.yml"].each do |file|
+  YAML.load_file(file).each { |locale, tree| locales[locale].merge!(flatten(tree)) }
+end
+
+problems = []
+problems += (locales["en"].keys - locales["ka"].keys).sort.map { |key| "missing in ka: #{key}" }
+problems += Dir["config/locales/*.yml"].flat_map { |file| duplicate_keys(file) }.map { |dup| "duplicate key: #{dup}" }
+
+Dir["app/views/**/*.erb"].each do |file|
+  # ApplicationMailer appends app/views/mailers to the view paths, so those templates have no mailers/ prefix.
+  parts = file.delete_prefix("app/views/mailers/").delete_prefix("app/views/").sub(/(\.[^\/.]+)+\z/, "").split("/")
+  parts[-1] = parts[-1].delete_prefix("_")
+  File.read(file).scan(/\bt\(?\s*["']\.([\w.]+)["']/).flatten.each do |key|
+    full = "#{parts.join(".")}.#{key}"
+    %w[ en ka ].each { |locale| problems << "#{locale}: #{full} (#{file})" unless locales[locale].key?(full) }
+  end
+end
+
+Dir["app/**/*.{rb,erb}"].each do |file|
+  File.read(file).scan(/(?:I18n\.t|\bt)\(\s*"([a-z_]+(?:\.[a-z_]+)+)"/).flatten.each do |key|
+    %w[ en ka ].each do |locale|
+      found = locales[locale].key?(key) || locales[locale].keys.any? { |existing| existing.start_with?("#{key}.") }
+      problems << "#{locale}: #{key} (#{file})" unless found
+    end
+  end
+end
+
+puts "en keys: #{locales["en"].size}, ka keys: #{locales["ka"].size}"
+if problems.empty?
+  puts "OK"
+else
+  puts problems
+  exit 1
+end
