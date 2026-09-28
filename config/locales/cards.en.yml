@@ -80,8 +80,6 @@ en:
           watch_this: "Watch this"
           pin_this_card: "Pin this card"
     display:
-      public_preview:
-        card_number: "Card number"
       common:
         assignees:
           assign: "Assign"
@@ -112,6 +110,7 @@ en:
           last_updated: "Last updated"
           assigned_to: "Assigned to"
       public_preview:
+        card_number: "Card number"
         meta:
           by_html: "By <strong>%{name}</strong>"
           updated: "Updated"

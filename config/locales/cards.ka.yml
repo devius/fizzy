@@ -80,8 +80,6 @@ ka:
           watch_this: "თვალყურის დევნება"
           pin_this_card: "ბარათის მიმაგრება"
     display:
-      public_preview:
-        card_number: "ბარათის ნომერი"
       common:
         assignees:
           assign: "დანიშვნა"
@@ -112,6 +110,7 @@ ka:
           last_updated: "ბოლოს განახლდა"
           assigned_to: "დანიშნულია"
       public_preview:
+        card_number: "ბარათის ნომერი"
         meta:
           by_html: "ავტორი: <strong>%{name}</strong>"
           updated: "განახლდა"
